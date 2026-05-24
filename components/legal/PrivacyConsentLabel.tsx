@@ -17,17 +17,21 @@ export default function PrivacyConsentLabel({
 }: PrivacyConsentLabelProps) {
   const t = useTranslations(namespace);
 
-  return t.rich(messageKey, {
-    privacyLink: (chunks) => (
-      <Link
-        href="/privacy"
-        className={cn(
-          'font-medium underline underline-offset-2 transition',
-          linkClassName ?? 'decoration-primary/50 hover:text-primary'
-        )}
-      >
-        {chunks}
-      </Link>
-    ),
-  });
+  return (
+    <span className="block min-w-0 whitespace-pre-line leading-snug">
+      {t.rich(messageKey, {
+        privacyLink: (chunks) => (
+          <Link
+            href="/privacy"
+            className={cn(
+              'font-medium underline underline-offset-2 transition',
+              linkClassName ?? 'decoration-primary/50 hover:text-primary'
+            )}
+          >
+            {chunks}
+          </Link>
+        ),
+      })}
+    </span>
+  );
 }

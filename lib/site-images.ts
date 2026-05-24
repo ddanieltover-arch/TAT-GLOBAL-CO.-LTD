@@ -9,6 +9,8 @@ const img = (path: string) => `/images/${path}`;
 
 export const siteImages = {
   hero: img('hero.jpg'),
+  /** Homepage hero — interactive dashboard art (desktop, ≥768px). */
+  heroDesktop: img('hero-desktop.jpg'),
   /** Homepage hero — portrait art direction for viewports ≤767px (`md`). */
   heroMobile: img('hero-mobile.jpg'),
   about: img('about.jpg'),
@@ -48,6 +50,10 @@ export type ProductGalleryImage = {
 
 export const imageAlts = {
   hero: 'Thai rice supply chain from farm fields through mill to global export port',
+  heroMobile:
+    'TAT Global mobile homepage — premium Thai rice export, quote request, WhatsApp, and product selection',
+  heroDesktop:
+    'TAT Global export logistics — connecting Thai rice to the world with port operations, shipment tracking, and global destinations',
   about: 'Thai rice farmers working in green rice fields',
   facility: 'Rice processing and export facility',
   aboutBanner:

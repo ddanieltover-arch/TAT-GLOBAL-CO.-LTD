@@ -19,7 +19,8 @@ const manifestPath = join(root, 'lib', 'product-image-manifest.ts');
 /** Site-wide JPG targets (max width 1920). */
 const SITE_JPG = {
   'hero.jpg': join(src2, '1 (5).png'),
-  'hero-mobile.jpg': join(src2, '6.png'),
+  'hero-desktop.jpg': join(src2, '1 (29).png'),
+  'hero-mobile.jpg': join(src2, '1 (33).png'),
   'about.jpg': join(src2, '1 (7).png'),
   'facility.jpg': join(src2, '5.png'),
   'product-default.jpg': join(src1, '1 (4).png'),

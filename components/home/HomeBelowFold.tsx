@@ -1,7 +1,6 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import TrustBar from '@/components/home/TrustBar';
 
 const AboutSection = dynamic(() => import('@/components/home/AboutSection'));
 const ProductCategories = dynamic(() => import('@/components/home/ProductCategories'));
@@ -16,7 +15,6 @@ const CTASection = dynamic(() => import('@/components/home/CTASection'));
 export default function HomeBelowFold() {
   return (
     <>
-      <TrustBar />
       <AboutSection />
       <ProductCategories />
       <WhyChooseUs />

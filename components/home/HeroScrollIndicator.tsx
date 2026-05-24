@@ -9,11 +9,6 @@ export default function HeroScrollIndicator() {
   const reduceMotion = useReducedMotion();
 
   const scrollToContent = () => {
-    const target = document.getElementById('trust-bar');
-    if (target) {
-      target.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
-      return;
-    }
     window.scrollTo({
       top: window.innerHeight,
       behavior: reduceMotion ? 'auto' : 'smooth',

@@ -218,7 +218,7 @@ export default function QuoteForm() {
 
       <label className="flex items-start gap-2 text-sm text-gray-700">
         <input type="checkbox" className="mt-1" {...register('gdprConsent')} />
-        <PrivacyConsentLabel namespace="quoteForm" messageKey="gdpr" />
+        <PrivacyConsentLabel namespace="quote.fields" messageKey="gdpr" />
       </label>
       {errors.gdprConsent?.message ? (
         <p className="text-sm text-red-600">{t('gdprHint')}</p>

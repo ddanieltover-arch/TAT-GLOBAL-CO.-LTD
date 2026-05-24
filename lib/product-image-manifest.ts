@@ -3,8 +3,6 @@
  * Slugs listed here have a dedicated WebP at public/images/products/{slug}.webp
  */
 export const productImageSlugs = new Set<string>([
-  "1121-sella-basmati-rice",
-  "arborio-rice",
   "irri-6-long-grain-rice",
   "irri-9-long-grain-rice",
   "japonica-rice",

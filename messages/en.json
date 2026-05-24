@@ -103,7 +103,37 @@
     "headline": "Premium Thai Rice — Grown in Thailand. Trusted Worldwide.",
     "subheadline": "We supply bulk jasmine rice, white rice, glutinous rice and more to importers, wholesalers, and distributors across 40+ countries. Reliable supply. Export-certified. Built for global trade.",
     "scrollLabel": "Scroll",
-    "scrollIndicator": "Scroll to trust highlights"
+    "scrollIndicator": "Scroll to trust highlights",
+    "hotspots": {
+      "requestQuote": "Request a quote",
+      "ourProducts": "Our products",
+      "statCountries": "Export markets — 50+ countries",
+      "statVolume": "About our production capacity",
+      "statQuality": "Quality assurance",
+      "statSupport": "Contact export support",
+      "viewDetails": "View shipment and logistics details",
+      "solutionBulk": "Bulk rice supply — products",
+      "solutionContainer": "Container loading — packaging and logistics",
+      "solutionInspection": "Quality inspection",
+      "solutionShipping": "Global shipping — export markets",
+      "solutionCustoms": "Customs clearance — packaging and logistics",
+      "solutionDelivery": "Timely delivery — packaging and logistics",
+      "destAsia": "Export destinations — Asia",
+      "destMiddleEast": "Export destinations — Middle East",
+      "destAfrica": "Export destinations — Africa",
+      "destEurope": "Export destinations — Europe",
+      "destNorthAmerica": "Export destinations — North America",
+      "chatWhatsApp": "Chat on WhatsApp",
+      "trustQuality": "100% quality — quality assurance",
+      "trustCountries": "50+ countries — export markets",
+      "trustDelivery": "On-time delivery — packaging and logistics",
+      "carouselPrev": "Previous products",
+      "carouselNext": "Next products",
+      "carouselProducts": "View premium rice products",
+      "barWebsite": "Visit tatglcoltd.com",
+      "barPhone": "Call export sales",
+      "barWhatsApp": "WhatsApp chat now"
+    }
   },
   "heroTrust": "✓ No minimum hassle — flexible MOQ  ✓ Fast quote response (within 24h)  ✓ GMP & HACCP certified",
   "trustBar": {
@@ -1182,7 +1212,7 @@
       "file": "Attach File (optional — PDF, DOC, max 5MB)",
       "contactMethod": "Preferred Contact Method",
       "timeline": "Expected Purchase Timeline",
-      "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink> and consent to being contacted regarding this inquiry. *"
+      "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink>\nand consent to being contacted regarding this inquiry. *"
     },
     "contactMethods": {
       "email": "Email",
@@ -1236,7 +1266,7 @@
       "email": "Business Email",
       "message": "Message"
     },
-    "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink> and consent to being contacted regarding this inquiry. *",
+    "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink>\nand consent to being contacted regarding this inquiry. *",
     "gdprHint": "Please agree to the privacy policy to continue.",
     "sending": "Sending…",
     "submitError": "Unable to send your message. Please try again.",

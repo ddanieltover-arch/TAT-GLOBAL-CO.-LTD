@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-[calc(8rem+env(safe-area-inset-bottom))] right-4 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-[1.03] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 motion-reduce:transition-none sm:bottom-[calc(7rem+env(safe-area-inset-bottom))] sm:right-6"
+      className="fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] right-4 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-[1.03] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 motion-reduce:transition-none sm:bottom-[calc(4.25rem+env(safe-area-inset-bottom))] sm:right-6"
       aria-label={t('whatsappAria')}
     >
       <WhatsAppGlyph className="h-7 w-7" aria-hidden />

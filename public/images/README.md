@@ -13,8 +13,9 @@ public/images/
 ├── about-banner.jpg       ← About page hero banner
 ├── quality-banner.jpg     ← Quality page hero banner
 ├── contact-banner.jpg     ← Contact page hero banner
-├── hero.jpg               ← Homepage hero (desktop / tablet landscape)
-├── hero-mobile.jpg        ← Homepage hero (mobile only, ≤767px)
+├── hero.jpg               ← Legacy landscape hero (unused on homepage)
+├── hero-desktop.jpg       ← Homepage hero (desktop ≥768px, interactive hotspots)
+├── hero-mobile.jpg        ← Homepage hero (mobile ≤767px, interactive hotspots)
 ├── about.jpg
 ├── facility.jpg           ← gallery image 3 (milling & processing)
 ├── product-default.jpg
