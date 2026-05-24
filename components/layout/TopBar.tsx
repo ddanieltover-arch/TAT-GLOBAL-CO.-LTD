@@ -15,15 +15,15 @@ export default function TopBar({locale}: TopBarProps) {
   const tl = useTranslations('lang');
 
   return (
-    <div className="hidden border-b border-gold/25 bg-primary-dark text-sm text-white md:block">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 lg:px-8">
-        <span className="text-white/90">{t('email')}</span>
-        <div className="flex items-center gap-8">
-          <span className="text-white/80">{t('tagline')}</span>
+    <div className="hidden border-b border-primary-dark/15 bg-gold text-xs text-primary-dark md:block">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1 lg:px-8">
+        <span className="font-medium leading-tight">{t('email')}</span>
+        <div className="flex items-center gap-6">
+          <span className="leading-tight text-primary-dark/85">{t('tagline')}</span>
           <Link
             href={pathname}
             locale={otherLocale}
-            className="touch-target-inline rounded px-2 font-medium tracking-wide text-gold-light transition hover:text-gold"
+            className="inline-flex items-center rounded border border-primary-dark/20 bg-primary-dark/10 px-2 py-0.5 text-xs font-semibold tracking-wide text-primary-dark transition hover:border-primary-dark/35 hover:bg-primary-dark/15"
             title={locale === 'en' ? tl('switchToThai') : tl('switchToEnglish')}
           >
             <span className="sr-only">

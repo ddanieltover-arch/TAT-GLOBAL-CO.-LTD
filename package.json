@@ -11,6 +11,8 @@
     "check:env": "tsx scripts/check-env.ts",
     "sync:catalog": "node scripts/sync-rice-catalog.mjs",
     "import:product-image": "tsx scripts/import-product-image.mjs",
+    "upload:product-images": "node scripts/upload-product-images-to-supabase.mjs",
+    "deploy:images": "node scripts/deploy-brand-images.mjs",
     "restore:images": "node scripts/restore-image-folders.mjs",
     "generate:catalog": "tsx scripts/generate-catalog-pdf.ts",
     "optimize:images": "node scripts/optimize-images.mjs",
@@ -18,6 +20,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
+    "@supabase/supabase-js": "^2.106.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",

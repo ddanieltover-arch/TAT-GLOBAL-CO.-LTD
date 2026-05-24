@@ -1,5 +1,8 @@
 import {z} from "zod";
+import {locales} from "./translations";
 import {products} from "./products";
+
+const localeField = z.enum(locales).optional();
 
 export const MULTIPLE_PRODUCTS_OPTION = "Multiple Products" as const;
 
@@ -43,6 +46,7 @@ const quoteBaseSchema = z.object({
   purchaseTimeline: z.enum(PURCHASE_TIMELINE_OPTIONS).optional(),
   gdprConsent: z.literal(true),
   honeypot: z.string().trim().max(0).optional(),
+  locale: localeField,
 });
 
 export const quoteClientSchema = quoteBaseSchema.extend({
@@ -73,6 +77,7 @@ export const newsletterRequestSchema = z.object({
   email: z.string().trim().email().max(254),
   honeypot: z.string().trim().max(0).optional(),
   gdprConsent: z.literal(true),
+  locale: localeField,
 });
 
 export type NewsletterRequest = z.infer<typeof newsletterRequestSchema>;
@@ -84,6 +89,7 @@ export const contactRequestSchema = z.object({
   message: z.string().trim().min(10).max(5000),
   gdprConsent: z.literal(true),
   honeypot: z.string().trim().max(0).optional(),
+  locale: localeField,
 });
 
 export type ContactRequest = z.infer<typeof contactRequestSchema>;

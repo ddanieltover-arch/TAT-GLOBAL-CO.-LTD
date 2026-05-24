@@ -37,8 +37,9 @@ export default function PageHero({label, title, description, children}: PageHero
         aria-hidden
       />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div initial="hidden" animate="visible" variants={staggerContainer}>
+        <motion.div initial={false} animate="visible" variants={staggerContainer}>
           <motion.p
+            initial={false}
             variants={fadeUp}
             transition={viewTransition}
             className="font-mono text-xs uppercase tracking-[0.2em] text-primary"
@@ -46,6 +47,7 @@ export default function PageHero({label, title, description, children}: PageHero
             {label}
           </motion.p>
           <motion.h1
+            initial={false}
             variants={fadeUp}
             transition={viewTransition}
             className="mt-4 font-display text-5xl text-gray-900"
@@ -54,6 +56,7 @@ export default function PageHero({label, title, description, children}: PageHero
           </motion.h1>
           {description ? (
             <motion.p
+              initial={false}
               variants={fadeUp}
               transition={viewTransition}
               className="mt-3 max-w-3xl text-gray-700"
@@ -61,11 +64,11 @@ export default function PageHero({label, title, description, children}: PageHero
               {description}
             </motion.p>
           ) : null}
-          <motion.div variants={fadeUp} transition={viewTransition}>
+          <motion.div initial={false} variants={fadeUp} transition={viewTransition}>
             <GoldDivider />
           </motion.div>
           {children ? (
-            <motion.div variants={fadeUp} transition={viewTransition} className="mt-8">
+            <motion.div initial={false} variants={fadeUp} transition={viewTransition} className="mt-8">
               {children}
             </motion.div>
           ) : null}

@@ -6,7 +6,7 @@ import {
 } from '@/lib/api-config';
 import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {newsletterRequestSchema} from '@/lib/schema';
-import {sendNotificationEmail} from '@/lib/send-notification-email';
+import {sendNewsletterFormEmails} from '@/lib/email';
 
 function honeypotSilentSuccess() {
   return NextResponse.json({ok: true as const, message: NEWSLETTER_SUCCESS_MESSAGE}, {status: 200});
@@ -41,6 +41,7 @@ export async function POST(request: Request) {
 
     const parsed = newsletterRequestSchema.safeParse({
       email: (body as {email?: unknown}).email,
+      locale: (body as {locale?: unknown}).locale,
       honeypot:
         typeof (body as {honeypot?: unknown}).honeypot === 'string'
           ? (body as {honeypot: string}).honeypot
@@ -53,18 +54,8 @@ export async function POST(request: Request) {
     }
 
     const data = parsed.data;
-    const notifyTo = process.env.NEWSLETTER_TO_EMAIL || process.env.QUOTE_TO_EMAIL || 'sales@tatglcoltd.com';
-    const fromEmail =
-      process.env.NEWSLETTER_FROM_EMAIL || process.env.QUOTE_FROM_EMAIL || 'onboarding@resend.dev';
 
-    await sendNotificationEmail({
-      from: fromEmail,
-      to: notifyTo,
-      subject: `Newsletter signup — ${data.email}`,
-      text: `New newsletter subscription\n\nEmail: ${data.email}\nTime: ${new Date().toISOString()}\nIP: ${ip}\n`,
-      replyTo: data.email,
-      logLabel: 'NEWSLETTER SIGNUP',
-    });
+    await sendNewsletterFormEmails(data.email, ip, data.locale);
 
     return NextResponse.json({ok: true as const, message: NEWSLETTER_SUCCESS_MESSAGE}, {status: 200});
   } catch (error) {

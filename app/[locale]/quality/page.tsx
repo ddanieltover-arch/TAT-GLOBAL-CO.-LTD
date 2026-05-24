@@ -3,7 +3,7 @@ import {getTranslations} from 'next-intl/server';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import AnimatedCard from '@/components/ui/AnimatedCard';
-import PageHero from '@/components/ui/PageHero';
+import QualityBanner from '@/components/quality/QualityBanner';
 import QualityTimeline from '@/components/ui/QualityTimeline';
 import {pageMetadata} from '@/lib/seo/page-metadata';
 import {unwrapRouteParams} from '@/lib/unwrap-route-params';
@@ -37,7 +37,7 @@ export default async function QualityPage() {
     <>
       <Header />
       <div className="min-h-screen bg-cream">
-        <PageHero label={tPage('pageTitle')} title={tPage('pageHeadline')} />
+        <QualityBanner title={tPage('pageHeadline')} intro={t('certBody')} />
 
         <section className="py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -1,15 +1,21 @@
 /**
- * Brand imagery served from `public/images/`.
- * Product photos: public/images/products/{slug}.webp (import via scripts/import-product-image.mjs)
+ * Brand imagery served from `public/images/` or Supabase Storage when configured.
+ * Product photos: {slug}.webp — local public/images/products/ or Supabase bucket (see docs/SUPABASE-STORAGE.md)
  */
 import {productImageSlugs} from '@/lib/product-image-manifest';
+import {getSupabaseProductImageUrl, getSupabasePublicUrl, isSupabaseStorageConfigured} from '@/lib/supabase-storage';
 
 const img = (path: string) => `/images/${path}`;
 
 export const siteImages = {
   hero: img('hero.jpg'),
+  /** Homepage hero — portrait art direction for viewports ≤767px (`md`). */
+  heroMobile: img('hero-mobile.jpg'),
   about: img('about.jpg'),
   facility: img('facility.jpg'),
+  aboutBanner: img('about-banner.jpg'),
+  qualityBanner: img('quality-banner.jpg'),
+  contactBanner: img('contact-banner.jpg'),
   productDefault: img('product-default.jpg'),
   gallery: {
     grainsCloseup: img('gallery/grains-closeup.jpg'),
@@ -41,9 +47,15 @@ export type ProductGalleryImage = {
 };
 
 export const imageAlts = {
-  hero: 'Golden rice paddies in Thailand at sunrise',
+  hero: 'Thai rice supply chain from farm fields through mill to global export port',
   about: 'Thai rice farmers working in green rice fields',
   facility: 'Rice processing and export facility',
+  aboutBanner:
+    'TAT Global about banner — Premium Thai rice manufacturer and global bulk supplier with quality, global supply, and export expertise',
+  qualityBanner:
+    'TAT Global quality assurance — Warehouse quality control, certified Thai rice bags, and export-ready inventory',
+  contactBanner:
+    'TAT Global contact banner — Get in touch for Thai rice exports with email, phone, and website details',
   product: 'Premium Thai rice grains',
 } as const;
 
@@ -54,11 +66,27 @@ const FIVE_IMAGE_GALLERY_SLUGS = new Set([
   'white-rice-5-broken',
 ]);
 
+function productAsset(filename: string): string {
+  if (isSupabaseStorageConfigured()) {
+    const remote = getSupabasePublicUrl(filename);
+    if (remote) {
+      return remote;
+    }
+  }
+  return img(`products/${filename}`);
+}
+
 const PRODUCT_GALLERY_PACKAGING_OVERRIDE: Record<string, string> = {
-  'thai-parboiled-rice': img('products/thai-parboiled-rice-gallery.webp'),
+  'thai-parboiled-rice': productAsset('thai-parboiled-rice-gallery.webp'),
 };
 
 function productWebp(slug: string): string {
+  if (isSupabaseStorageConfigured()) {
+    const remote = getSupabaseProductImageUrl(slug);
+    if (remote) {
+      return remote;
+    }
+  }
   return img(`products/${slug}.webp`);
 }
 
@@ -118,16 +146,16 @@ export function getProductGallery(slug: string): ProductGalleryImage[] {
   const primary = getProductImage(slug);
   const images: ProductGalleryImage[] = [
     {src: primary, fallbackSrc: siteImages.productDefault, captionKey: 'product'},
-    {src: siteImages.gallery.grainsCloseup, fallbackSrc: siteImages.productDefault, captionKey: 'grains'},
+    {src: siteImages.gallery.packagingBags, fallbackSrc: siteImages.productDefault, captionKey: 'packaging'},
     {src: siteImages.facility, fallbackSrc: siteImages.productDefault, captionKey: 'facility'},
     {src: siteImages.about, fallbackSrc: siteImages.productDefault, captionKey: 'origin'},
   ];
 
   if (FIVE_IMAGE_GALLERY_SLUGS.has(slug)) {
     images.push({
-      src: PRODUCT_GALLERY_PACKAGING_OVERRIDE[slug] ?? siteImages.gallery.packagingBags,
+      src: PRODUCT_GALLERY_PACKAGING_OVERRIDE[slug] ?? siteImages.gallery.grainsCloseup,
       fallbackSrc: siteImages.productDefault,
-      captionKey: 'packaging',
+      captionKey: 'grains',
     });
   }
 

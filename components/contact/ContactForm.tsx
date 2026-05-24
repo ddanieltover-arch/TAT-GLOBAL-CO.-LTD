@@ -2,7 +2,7 @@
 
 import {zodResolver} from '@hookform/resolvers/zod';
 import {CheckCircle2, Loader2} from 'lucide-react';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {cloneElement, useState, type ReactElement} from 'react';
 import {useForm} from 'react-hook-form';
 import PrivacyConsentLabel from '@/components/legal/PrivacyConsentLabel';
@@ -15,6 +15,7 @@ const fieldClass =
   'w-full rounded-md border border-gray-100 bg-white px-3 py-2.5 text-sm text-gray-900 outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20';
 
 export default function ContactForm() {
+  const locale = useLocale();
   const t = useTranslations('contactPage');
   const tCta = useTranslations('cta');
   const [submitState, setSubmitState] = useState<SubmitState>('idle');
@@ -41,7 +42,7 @@ export default function ContactForm() {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(values),
+        body: JSON.stringify({...values, locale}),
       });
 
       const payload = (await response.json()) as {message?: string};

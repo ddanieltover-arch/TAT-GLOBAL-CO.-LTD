@@ -26,9 +26,8 @@ export default function ProductCard({product, index = 0}: ProductCardProps) {
   return (
     <motion.article
       layout
-      initial="hidden"
+      initial={false}
       animate="visible"
-      exit="hidden"
       variants={fadeUp}
       transition={{...viewTransition, delay: index * 0.05}}
       whileHover={cardHover}
@@ -40,11 +39,13 @@ export default function ProductCard({product, index = 0}: ProductCardProps) {
           src={getProductImage(product.slug)}
           fallbackSrc={getProductImageFallback()}
           alt={`${t('name')} — ${imageAlts.product}`}
-          className="h-56 w-full"
-          speed={0.2}
+          className="h-56 w-full bg-gray-50"
+          objectFit="contain"
+          imageClassName="p-1.5 scale-[1.14]"
+          speed={0}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           overlay={
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/50 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/35 via-transparent to-transparent" />
           }
         />
       </Link>

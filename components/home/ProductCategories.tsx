@@ -32,11 +32,13 @@ function ProductCategoryCard({
       <ParallaxImage
         src={getProductImage(product.slug)}
         alt={`${tp('name')} — ${imageAlts.product}`}
-        className="h-44 w-full"
-        speed={0.22}
+        className="h-44 w-full bg-gray-50"
+        objectFit="contain"
+        imageClassName="p-1.5 scale-[1.14]"
+        speed={0}
         sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         overlay={
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/55 via-primary/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/35 via-transparent to-transparent" />
         }
       />
       <div className="p-5">

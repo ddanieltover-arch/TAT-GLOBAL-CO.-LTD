@@ -1,5 +1,6 @@
 import {COMPANY_ADDRESS} from '@/lib/company';
 import {SITE_NAME} from '@/lib/seo/site';
+import {brandLogo} from '@/lib/site-assets';
 import {getSiteUrl} from '@/lib/site-url';
 
 /** Localized Organization entity for current locale URL (single graph per page load). */
@@ -14,6 +15,7 @@ export function OrganizationJsonLd({locale}: {locale: string}) {
     '@type': 'Organization',
     name: SITE_NAME,
     url: `${base}/${locale}`,
+    logo: `${base}${brandLogo.png}`,
     email,
     address: {
       '@type': 'PostalAddress',

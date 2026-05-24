@@ -1,5 +1,5 @@
 /**
- * Convert and save a product photo as optimized WebP.
+ * Convert and save a product photo as optimized WebP, then upload to Supabase Storage.
  *
  * Usage:
  *   node scripts/import-product-image.mjs <product-slug> <path-to-image>
@@ -9,9 +9,10 @@
  */
 import {existsSync} from 'node:fs';
 import {readFile, writeFile} from 'node:fs/promises';
-import {basename, join} from 'node:path';
+import {basename, isAbsolute, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {products} from '../lib/products.ts';
+import {uploadProductImagesToSupabase} from './supabase-product-images.mjs';
 
 const MAX_WIDTH = 1200;
 const WEBP_QUALITY = 82;
@@ -35,7 +36,7 @@ async function main() {
     process.exit(1);
   }
 
-  const resolvedInput = join(process.cwd(), inputPath);
+  const resolvedInput = isAbsolute(inputPath) ? inputPath : join(process.cwd(), inputPath);
   if (!existsSync(resolvedInput)) {
     console.error(`File not found: ${resolvedInput}`);
     process.exit(1);
@@ -78,6 +79,12 @@ ${[...slugs].sort().map((s) => `  ${JSON.stringify(s)},`).join('\n')}
   console.log(`Input:   ${basename(resolvedInput)} (${(before.length / 1024).toFixed(1)} KB)`);
   console.log(`Output:  public/images/products/${slug}.webp (${(out.length / 1024).toFixed(1)} KB)`);
   console.log(`Manifest: ${slugs.size} product image(s) registered`);
+
+  console.log('');
+  const upload = await uploadProductImagesToSupabase();
+  if (!upload.skipped && upload.ok < upload.total) {
+    process.exit(1);
+  }
 }
 
 main().catch((err) => {

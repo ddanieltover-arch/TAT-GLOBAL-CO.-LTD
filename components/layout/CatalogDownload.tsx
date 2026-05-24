@@ -2,7 +2,7 @@
 
 import {FileDown} from 'lucide-react';
 import {useTranslations} from 'next-intl';
-import {buttonSizes, buttonVariants} from '@/components/ui/Button';
+import {buttonClassName} from '@/components/ui/Button';
 import {cn} from '@/lib/cn';
 import {CATALOG_PDF} from '@/lib/site-assets';
 
@@ -21,9 +21,10 @@ export default function CatalogDownload({className, variant = 'footer'}: Catalog
       href={CATALOG_PDF.path}
       download={CATALOG_PDF.filename}
       className={cn(
-        buttonVariants.gold,
-        isFooter ? buttonSizes.sm : buttonSizes.md,
-        'gap-2',
+        buttonClassName({
+          variant: 'gold',
+          size: isFooter ? 'sm' : 'md',
+        }),
         className
       )}
     >

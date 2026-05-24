@@ -1,7 +1,8 @@
 /**
  * Server and public environment helpers.
- * See `.env.example` and `docs/ENVIRONMENT.md` for production setup.
+ * See `.env.example`, `docs/ENVIRONMENT.md`, and `docs/SUPABASE-STORAGE.md`.
  */
+import {isSupabaseStorageConfigured} from '@/lib/supabase-storage';
 
 const DEFAULT_WHATSAPP_DIGITS = '66829600612';
 
@@ -86,6 +87,13 @@ export function getEnvChecklist(): EnvCheckItem[] {
       requirement: 'optional',
       ok: isSet('CRM_WEBHOOK_URL') || isSet('CRM_QUOTE_WEBHOOK_URL'),
       hint: 'Quote/contact POST JSON after email is sent.',
+    },
+    {
+      key: 'NEXT_PUBLIC_SUPABASE_URL',
+      label: 'Supabase Storage for product images',
+      requirement: 'optional',
+      ok: isSupabaseStorageConfigured(),
+      hint: 'Set URL + anon key to serve product WebPs from a public bucket. See docs/SUPABASE-STORAGE.md.',
     },
   ];
 

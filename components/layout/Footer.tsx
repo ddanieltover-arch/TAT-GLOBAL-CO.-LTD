@@ -5,20 +5,22 @@ import {Link} from '@/i18n/navigation';
 import PrivacyConsentLabel from '@/components/legal/PrivacyConsentLabel';
 import CatalogDownload from './CatalogDownload';
 import NewsletterSignup from './NewsletterSignup';
+import Logo from './Logo';
 import {featuredProductSlugs} from '@/lib/products';
 import {catalogKeyFromSlug} from '@/lib/product-messages';
+import {footerNav} from '@/lib/site-navigation';
 
 export default function Footer() {
   const tf = useTranslations('footer');
-  const tCommon = useTranslations('common');
+  const tn = useTranslations('nav');
   const tCatalog = useTranslations('products.catalog');
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gold/25 bg-primary-dark pb-40 text-white sm:pb-36">
+    <footer className="border-t border-gold/25 bg-primary-dark pb-20 text-white sm:pb-16">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 lg:grid-cols-4 lg:px-8">
         <div>
-          <h3 className="font-display text-2xl text-gold-light">{tCommon('brand')}</h3>
+          <Logo variant="footer" />
           <p className="mt-4 text-sm leading-relaxed text-white/80">{tf('tagline')}</p>
           <div className="mt-5 space-y-2 text-sm text-white/85">
             <p>sales@tatglcoltd.com</p>
@@ -34,29 +36,16 @@ export default function Footer() {
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-[0.12em] text-gold-light">
-            {tf('company')}
+            {tf('explore')}
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-white/85">
-            <li>
-              <Link href="/about" className="transition hover:text-gold-light">
-                {tf('aboutLink')}
-              </Link>
-            </li>
-            <li>
-              <Link href="/quality" className="transition hover:text-gold-light">
-                {tf('qualityLink')}
-              </Link>
-            </li>
-            <li>
-              <Link href="/markets" className="transition hover:text-gold-light">
-                {tf('marketsLink')}
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq" className="transition hover:text-gold-light">
-                {tf('faqLink')}
-              </Link>
-            </li>
+            {footerNav.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="transition hover:text-gold-light">
+                  {tn(item.labelKey)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -93,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gold/20 px-6 py-6 text-center text-xs text-white/60 lg:px-8">
+      <div className="border-t border-gold/20 px-6 py-4 text-center text-xs text-white/60 lg:px-8">
         <PrivacyConsentLabel
           namespace="footer"
           messageKey="legalPrivacy"

@@ -25,6 +25,12 @@ Restart the dev server after any `.env.local` change (`npm run dev`).
 
 Without `RESEND_API_KEY`, form submissions are **accepted** but only **logged to the server console** — no email is delivered.
 
+Quote, contact, and newsletter submissions send **two** branded HTML emails each:
+1. **Team notification** → `sales@tatglcoltd.com` (or your `*_TO_EMAIL` overrides)
+2. **Customer confirmation** → the submitter’s email (EN or TH based on site locale)
+
+Templates live in `lib/email/` with a plain-text fallback.
+
 ---
 
 ## Required at build time (WhatsApp + SEO)
@@ -50,7 +56,20 @@ If `NEXT_PUBLIC_WHATSAPP_PHONE` is unset, the site falls back to **+66 82 960 06
 
 ---
 
-## Optional
+## Optional — Supabase product images
+
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public anon key (read public bucket) |
+| `NEXT_PUBLIC_SUPABASE_STORAGE_BUCKET` | Bucket name (default `product-images`) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Upload script only (`npm run upload:product-images`) |
+
+Full setup: **`docs/SUPABASE-STORAGE.md`**
+
+---
+
+## Optional — CRM
 
 | Variable | Purpose |
 |----------|---------|

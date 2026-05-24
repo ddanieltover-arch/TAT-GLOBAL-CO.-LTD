@@ -7,7 +7,7 @@ import {
 import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {quoteServerSchema} from '@/lib/schema';
 import {buildQuoteCrmPayload, sendCrmWebhook} from '@/lib/crm-webhook';
-import {sendNotificationEmail} from '@/lib/send-notification-email';
+import {sendQuoteFormEmails} from '@/lib/email';
 
 function toBoolean(value: FormDataEntryValue | null) {
   return value === 'true' || value === 'on';
@@ -40,6 +40,7 @@ export async function POST(request: Request) {
     }
 
     const fileAttachment = formData.get('fileAttachment');
+    const localeRaw = String(formData.get('locale') || '').trim();
 
     const payload = {
       fullName: String(formData.get('fullName') || ''),
@@ -56,6 +57,7 @@ export async function POST(request: Request) {
       preferredContact: String(formData.get('preferredContact') || '') || undefined,
       purchaseTimeline: String(formData.get('purchaseTimeline') || '') || undefined,
       gdprConsent: toBoolean(formData.get('gdprConsent')),
+      locale: localeRaw === 'th' || localeRaw === 'en' ? localeRaw : undefined,
       honeypot: '',
       fileAttachment:
         fileAttachment instanceof File && fileAttachment.size > 0 ? fileAttachment : undefined,
@@ -82,37 +84,9 @@ export async function POST(request: Request) {
       ];
     }
 
-    const emailBody = `
-New quote inquiry from ${data.fullName}
+    const attachmentName = attachments?.[0]?.filename;
 
-Company: ${data.companyName}
-Email: ${data.email}
-Phone: ${data.phone}
-WhatsApp: ${data.whatsapp}
-Country: ${data.country}
-Product Interested In: ${data.productInterested}
-Quantity Required: ${data.quantityRequired}
-Packaging Preference: ${data.packagingPreference}
-Delivery Destination: ${data.deliveryDestination}
-Preferred Contact Method: ${data.preferredContact || 'N/A'}
-Expected Purchase Timeline: ${data.purchaseTimeline || 'N/A'}
-Attachment: ${attachments ? attachments[0].filename : 'None'}
-
-Message:
-${data.message}
-`.trim();
-
-    const toEmail = process.env.QUOTE_TO_EMAIL || 'sales@tatglcoltd.com';
-    const fromEmail = process.env.QUOTE_FROM_EMAIL || 'onboarding@resend.dev';
-
-    await sendNotificationEmail({
-      from: fromEmail,
-      to: toEmail,
-      subject: `Quote Request - ${data.companyName}`,
-      text: emailBody,
-      attachments,
-      logLabel: 'QUOTE REQUEST',
-    });
+    await sendQuoteFormEmails(data, {attachmentName}, attachments);
 
     const fileMeta = data.fileAttachment
       ? {

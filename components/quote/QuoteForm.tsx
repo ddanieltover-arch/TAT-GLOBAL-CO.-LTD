@@ -2,7 +2,7 @@
 
 import {zodResolver} from '@hookform/resolvers/zod';
 import {CheckCircle2, Loader2} from 'lucide-react';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {useEffect, useState} from 'react';
 import {useForm} from 'react-hook-form';
 import {
@@ -27,6 +27,7 @@ const TIMELINE_KEYS = ['t30', 't13', 't36', 'tExplore'] as const;
 const CONTACT_KEYS = ['email', 'whatsapp', 'phone'] as const;
 
 export default function QuoteForm() {
+  const locale = useLocale();
   const {prefilledProductSlug} = useQuoteModal();
   const [submitState, setSubmitState] = useState<SubmitState>('idle');
   const [submitError, setSubmitError] = useState<string>('');
@@ -81,6 +82,7 @@ export default function QuoteForm() {
       formData.append('purchaseTimeline', values.purchaseTimeline || '');
       formData.append('gdprConsent', values.gdprConsent ? 'true' : 'false');
       formData.append('honeypot', values.honeypot || '');
+      formData.append('locale', locale);
 
       const fileList = values.fileAttachment as FileList | undefined;
       const file = fileList?.[0];

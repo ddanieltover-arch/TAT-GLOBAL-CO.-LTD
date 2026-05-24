@@ -24,7 +24,7 @@ export default function HeroScrollIndicator() {
     <motion.button
       type="button"
       onClick={scrollToContent}
-      className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1 text-gold-light/90 transition hover:text-gold-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-light focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
+      className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-gold-light/90 transition hover:text-gold-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-light focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark md:flex"
       aria-label={t('scrollIndicator')}
       initial={reduceMotion ? false : {opacity: 0, y: -8}}
       animate={reduceMotion ? undefined : {opacity: 1, y: 0}}

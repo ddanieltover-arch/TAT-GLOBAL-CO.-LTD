@@ -43,7 +43,7 @@ export type ButtonProps = ButtonAsButton | ButtonAsLink;
 const baseClass =
   'inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-70 motion-reduce:transition-none';
 
-function buttonClassName({
+export function buttonClassName({
   variant = 'gold',
   size = 'md',
   fullWidth,

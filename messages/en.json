@@ -10,7 +10,9 @@
     "mainNavLabel": "Main navigation",
     "mobileNavLabel": "Mobile navigation",
     "openMobileNav": "Open menu",
-    "closeMobileNav": "Close menu"
+    "closeMobileNav": "Close menu",
+    "logoHome": "TAT Global — home",
+    "logoAlt": "TAT GLOBAL CO., LTD — Premium Rice Exporter"
   },
   "seo": {
     "home": {
@@ -58,7 +60,8 @@
     "packaging": "Packaging & Logistics",
     "markets": "Export Markets",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Privacy Policy"
   },
   "topbar": {
     "email": "sales@tatglcoltd.com",
@@ -141,15 +144,19 @@
       "label": "Product image gallery",
       "prev": "Previous image",
       "next": "Next image",
+      "closeLightbox": "Close image viewer",
+      "closeBackdrop": "Close image viewer",
+      "lightboxTitle": "Enlarged product image",
       "thumbnailsLabel": "Gallery thumbnails",
       "viewImage": "View image {n}: {caption}",
+      "enlargeImage": "View larger: {caption}",
       "imageAlt": "{product} — {caption}",
       "captions": {
         "product": "Product grade",
         "grains": "Grain close-up",
         "facility": "Milling & processing",
         "origin": "Thai rice origin",
-        "packaging": "Export packaging"
+        "packaging": "Bulk packaging (5 / 25 / 50 kg)"
       }
     },
     "catalog": {
@@ -1076,6 +1083,7 @@
   },
   "footer": {
     "company": "Company",
+    "explore": "Explore",
     "productsColumn": "Products",
     "newsletter": "Newsletter",
     "tagline": "Premium Thai Rice — Manufactured and Exported from Thailand to the World.",

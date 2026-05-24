@@ -10,7 +10,9 @@
     "mainNavLabel": "เมนูหลัก",
     "mobileNavLabel": "เมนูมือถือ",
     "openMobileNav": "เปิดเมนู",
-    "closeMobileNav": "ปิดเมนู"
+    "closeMobileNav": "ปิดเมนู",
+    "logoHome": "ทีเอที โกลบอล — หน้าแรก",
+    "logoAlt": "บริษัท ทีเอที โกลบอล จำกัด — ส่งออกข้าวพรีเมียม"
   },
   "seo": {
     "home": {
@@ -58,7 +60,8 @@
     "packaging": "บรรจุภัณฑ์และโลจิสติกส์",
     "markets": "ตลาดส่งออก",
     "faq": "คำถามที่พบบ่อย",
-    "contact": "ติดต่อ"
+    "contact": "ติดต่อ",
+    "privacy": "นโยบายความเป็นส่วนตัว"
   },
   "topbar": {
     "email": "sales@tatglcoltd.com",
@@ -141,15 +144,19 @@
       "label": "แกลเลอรีรูปสินค้า",
       "prev": "รูปก่อนหน้า",
       "next": "รูปถัดไป",
+      "closeLightbox": "ปิดตัวดูรูป",
+      "closeBackdrop": "ปิดตัวดูรูป",
+      "lightboxTitle": "รูปสินค้าขนาดใหญ่",
       "thumbnailsLabel": "ภาพย่อแกลเลอรี",
       "viewImage": "ดูรูปที่ {n}: {caption}",
+      "enlargeImage": "ดูขนาดใหญ่: {caption}",
       "imageAlt": "{product} — {caption}",
       "captions": {
         "product": "เกรดสินค้า",
         "grains": "เมล็ดข้าวระยะใกล้",
         "facility": "โรงสีและการแปรรูป",
         "origin": "แหล่งปลูกข้าวไทย",
-        "packaging": "บรรจุภัณฑ์ส่งออก"
+        "packaging": "บรรจุภัณฑ์ขายส่ง (5 / 25 / 50 กก.)"
       }
     },
     "catalog": {
@@ -1076,6 +1083,7 @@
   },
   "footer": {
     "company": "บริษัท",
+    "explore": "สำรวจเว็บไซต์",
     "productsColumn": "สินค้า",
     "newsletter": "จดหมายข่าว",
     "tagline": "ข้าวไทยพรีเมียม — ผลิตและส่งออกจากประเทศไทยสู่ตลาดโลก",

@@ -40,22 +40,22 @@ export default function StickyQuoteCTA() {
       aria-hidden={!visible}
     >
       <div
-        className="border-t border-gold/50 pb-[max(0.75rem,env(safe-area-inset-bottom))]"
+        className="border-t border-gold/50 pb-[max(0.375rem,env(safe-area-inset-bottom))]"
         style={{
           backgroundColor: 'var(--color-gray-100)',
           color: 'var(--color-gray-900)',
         }}
       >
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6 lg:px-8">
-          <p className="text-center text-sm font-medium leading-snug sm:text-left" style={{color: '#1a1814'}}>
+        <div className="mx-auto flex max-w-7xl flex-col gap-1.5 px-4 py-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4 lg:px-8">
+          <p className="text-center text-xs font-medium leading-tight sm:text-left" style={{color: '#1a1814'}}>
             {t('stickyPitch')}
           </p>
           <Button
             type="button"
-            size="md"
+            size="sm"
             tabIndex={visible ? 0 : -1}
             onClick={() => openQuoteModal()}
-            className="shrink-0 hover:brightness-105 focus-visible:ring-primary"
+            className="min-h-8 shrink-0 px-3 py-1 text-xs hover:brightness-105 focus-visible:ring-primary"
           >
             {t('stickyCta')}
           </Button>

@@ -7,7 +7,7 @@ import {
 import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {contactRequestSchema} from '@/lib/schema';
 import {buildContactCrmPayload, sendCrmWebhook} from '@/lib/crm-webhook';
-import {sendNotificationEmail} from '@/lib/send-notification-email';
+import {sendContactFormEmails} from '@/lib/email';
 
 function contactAcceptedResponse() {
   return NextResponse.json({message: CONTACT_SUCCESS_MESSAGE}, {status: 200});
@@ -49,6 +49,7 @@ export async function POST(request: Request) {
       email: (body as {email?: unknown}).email,
       message: (body as {message?: unknown}).message,
       gdprConsent: (body as {gdprConsent?: unknown}).gdprConsent === true,
+      locale: (body as {locale?: unknown}).locale,
       honeypot:
         typeof (body as {honeypot?: unknown}).honeypot === 'string'
           ? (body as {honeypot: string}).honeypot
@@ -60,28 +61,8 @@ export async function POST(request: Request) {
     }
 
     const data = parsed.data;
-    const toEmail = process.env.CONTACT_TO_EMAIL || process.env.QUOTE_TO_EMAIL || 'sales@tatglcoltd.com';
-    const fromEmail =
-      process.env.CONTACT_FROM_EMAIL || process.env.QUOTE_FROM_EMAIL || 'onboarding@resend.dev';
 
-    const emailBody = `
-New contact page inquiry from ${data.fullName}
-
-Company: ${data.companyName}
-Email: ${data.email}
-
-Message:
-${data.message}
-`.trim();
-
-    await sendNotificationEmail({
-      from: fromEmail,
-      to: toEmail,
-      subject: `Contact inquiry — ${data.companyName}`,
-      text: emailBody,
-      replyTo: data.email,
-      logLabel: 'CONTACT INQUIRY',
-    });
+    await sendContactFormEmails(data);
 
     void sendCrmWebhook(buildContactCrmPayload(data));
 

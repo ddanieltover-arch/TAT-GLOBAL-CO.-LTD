@@ -6,9 +6,17 @@ Drop replacement photos here using the **same filenames** to update the live sit
 
 ```
 public/images/
-├── hero.jpg
+├── logo.webp              ← company logo (header/footer)
+├── logo-header.webp       ← compact header variant
+├── logo.png               ← PNG master + JSON-LD
+├── logo-email.png         ← small PNG embedded in transactional emails
+├── about-banner.jpg       ← About page hero banner
+├── quality-banner.jpg     ← Quality page hero banner
+├── contact-banner.jpg     ← Contact page hero banner
+├── hero.jpg               ← Homepage hero (desktop / tablet landscape)
+├── hero-mobile.jpg        ← Homepage hero (mobile only, ≤767px)
 ├── about.jpg
-├── facility.jpg
+├── facility.jpg           ← gallery image 3 (milling & processing)
 ├── product-default.jpg
 ├── gallery/
 │   ├── grains-closeup.jpg

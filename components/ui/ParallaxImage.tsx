@@ -3,6 +3,7 @@
 import {motion, useReducedMotion, useScroll, useTransform} from 'framer-motion';
 import Image from 'next/image';
 import {useEffect, useRef, useState, type ReactNode} from 'react';
+import {cn} from '@/lib/cn';
 
 type ParallaxImageProps = {
   src: string;
@@ -16,6 +17,10 @@ type ParallaxImageProps = {
   overlay?: ReactNode;
   /** Used when `src` is missing or fails to load (e.g. product photo not uploaded yet). */
   fallbackSrc?: string;
+  /** `contain` fits the full image inside the frame (best for product pack shots). */
+  objectFit?: 'cover' | 'contain';
+  /** Extra classes on the underlying `Image` (e.g. product padding/scale). */
+  imageClassName?: string;
 };
 
 export default function ParallaxImage({
@@ -28,6 +33,8 @@ export default function ParallaxImage({
   quality = priority ? 82 : 75,
   overlay,
   fallbackSrc,
+  objectFit = 'cover',
+  imageClassName,
 }: ParallaxImageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
@@ -50,37 +57,36 @@ export default function ParallaxImage({
 
   const travel = Math.round(speed * 140);
   const y = useTransform(scrollYProgress, [0, 1], [`-${travel}px`, `${travel}px`]);
+  const isContain = objectFit === 'contain';
+  const imageClasses = cn(
+    isContain ? 'object-contain' : 'object-cover',
+    imageClassName
+  );
+
+  const image = (
+    <Image
+      src={activeSrc}
+      alt={alt}
+      fill
+      className={imageClasses}
+      sizes={sizes}
+      priority={priority}
+      fetchPriority={priority ? 'high' : undefined}
+      quality={quality}
+      onError={handleError}
+    />
+  );
 
   return (
     <div ref={containerRef} className={`relative overflow-hidden ${className}`}>
-      {reduceMotion ? (
-        <Image
-          src={activeSrc}
-          alt={alt}
-          fill
-          className="object-cover"
-          sizes={sizes}
-          priority={priority}
-          fetchPriority={priority ? 'high' : undefined}
-          quality={quality}
-          onError={handleError}
-        />
+      {reduceMotion || isContain || speed === 0 ? (
+        image
       ) : (
         <motion.div
           className="absolute inset-x-0 -top-[18%] h-[136%] w-full will-change-transform"
           style={{y}}
         >
-          <Image
-            src={activeSrc}
-            alt={alt}
-            fill
-            className="object-cover"
-            sizes={sizes}
-            priority={priority}
-            fetchPriority={priority ? 'high' : undefined}
-            quality={quality}
-            onError={handleError}
-          />
+          {image}
         </motion.div>
       )}
       {overlay}

@@ -23,6 +23,8 @@ export type SendNotificationEmailOptions = {
   to: string | string[];
   subject: string;
   text: string;
+  /** Branded HTML body (Resend + SMTP). Plain `text` is always sent as fallback. */
+  html?: string;
   replyTo?: string | string[];
   attachments?: EmailAttachment[];
   /** Console log prefix when no provider is configured */
@@ -39,6 +41,7 @@ export async function sendNotificationEmail(opts: SendNotificationEmailOptions) 
       to: toList,
       subject: opts.subject,
       text: opts.text,
+      html: opts.html,
       replyTo: opts.replyTo,
       attachments: opts.attachments?.length
         ? opts.attachments.map((a) => ({
@@ -71,6 +74,7 @@ export async function sendNotificationEmail(opts: SendNotificationEmailOptions) 
       to: toList.join(', '),
       subject: opts.subject,
       text: opts.text,
+      html: opts.html,
       ...replyProp,
       attachments: opts.attachments,
     });

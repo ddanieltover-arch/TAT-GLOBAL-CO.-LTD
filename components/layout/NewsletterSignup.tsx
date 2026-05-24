@@ -3,13 +3,14 @@
 import {FormEvent, useState} from 'react';
 import PrivacyConsentLabel from '@/components/legal/PrivacyConsentLabel';
 import Button from '@/components/ui/Button';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 
 type ApiResponse =
   | {ok: true; message?: string}
   | {ok: false; code: 'INVALID' | 'RATE_LIMITED' | 'SERVER_ERROR'};
 
 export default function NewsletterSignup() {
+  const locale = useLocale();
   const tf = useTranslations('footer');
   const [email, setEmail] = useState('');
   const [gdpr, setGdpr] = useState(false);
@@ -32,6 +33,7 @@ export default function NewsletterSignup() {
           email: email.trim(),
           honeypot: trap?.value ?? '',
           gdprConsent: gdpr,
+          locale,
         }),
       });
 

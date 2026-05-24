@@ -3,10 +3,8 @@ import {getTranslations} from 'next-intl/server';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import AnimatedCard from '@/components/ui/AnimatedCard';
-import PageHero from '@/components/ui/PageHero';
-import ParallaxImage from '@/components/ui/ParallaxImage';
+import AboutBanner from '@/components/about/AboutBanner';
 import ScrollReveal from '@/components/ui/ScrollReveal';
-import {imageAlts, siteImages} from '@/lib/site-images';
 import {pageMetadata} from '@/lib/seo/page-metadata';
 import {unwrapRouteParams} from '@/lib/unwrap-route-params';
 
@@ -39,26 +37,9 @@ export default async function AboutPage() {
     <>
       <Header />
       <div className="min-h-screen bg-cream">
-        <PageHero label={t('label')} title={t('headline')} description={t('body1')} />
+        <AboutBanner title={t('headline')} intro={t('body1')} />
 
-        <section className="py-12">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <ScrollReveal>
-              <ParallaxImage
-                src={siteImages.facility}
-                alt={imageAlts.facility}
-                className="h-72 w-full rounded-2xl border border-gold/25 shadow-card sm:h-96"
-                speed={0.32}
-                sizes="100vw"
-                overlay={
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/40 via-transparent to-transparent" />
-                }
-              />
-            </ScrollReveal>
-          </div>
-        </section>
-
-        <section className="pb-12">
+        <section className="py-12 pb-12">
           <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-2 lg:px-8">
             <AnimatedCard index={0} className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
               <h2 className="font-display text-3xl text-gray-900">{tPage('manufacturingTitle')}</h2>

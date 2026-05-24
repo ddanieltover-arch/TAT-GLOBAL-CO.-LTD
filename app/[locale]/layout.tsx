@@ -18,7 +18,7 @@ import {unwrapRouteParams} from '@/lib/unwrap-route-params';
 const displayFont = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-display',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
 const bodyFont = DM_Sans({
@@ -30,7 +30,7 @@ const bodyFont = DM_Sans({
 const thaiFont = Sarabun({
   subsets: ['thai', 'latin'],
   variable: '--font-thai',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 export async function generateMetadata({
