@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1a4a2e;
+  --color-primary-dark: #0d2e1a;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e8c97a;
+  --color-white: #ffffff;
+  --color-cream: #f9f7f2;
+  --color-gray-100: #f3f1ec;
+  --color-gray-400: #9a9590;
+  --color-gray-700: #3d3a35;
+  --color-gray-900: #1a1814;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-cream text-gray-900 antialiased;
+}
+
+* {
+  @apply border-gray-100;
+}
+
+@layer utilities {
+  .touch-target {
+    @apply inline-flex min-h-11 min-w-11 items-center justify-center;
+  }
+
+  .touch-target-inline {
+    @apply inline-flex min-h-11 items-center py-2;
+  }
+}

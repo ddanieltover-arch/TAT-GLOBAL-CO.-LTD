@@ -1,0 +1,50 @@
+{
+  "name": "tat-global-rice-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3030",
+    "build": "next build",
+    "start": "next start -p 3030",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "check:env": "tsx scripts/check-env.ts",
+    "sync:catalog": "node scripts/sync-rice-catalog.mjs",
+    "import:product-image": "tsx scripts/import-product-image.mjs",
+    "restore:images": "node scripts/restore-image-folders.mjs",
+    "generate:catalog": "tsx scripts/generate-catalog-pdf.ts",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "audit:lighthouse": "npm run build && npx lighthouse http://localhost:3031/en --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=lighthouse-report.json"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.14.0",
+    "next": "^14.2.35",
+    "next-intl": "^4.11.0",
+    "nodemailer": "^8.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.75.0",
+    "react-simple-maps": "^3.0.0",
+    "resend": "^6.12.3",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.35",
+    "pdf-lib": "^1.17.1",
+    "postcss": "^8.5.14",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.19.4",
+    "typescript": "^5.4.5"
+  }
+}

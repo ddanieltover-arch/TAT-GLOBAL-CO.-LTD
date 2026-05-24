@@ -1,0 +1,1277 @@
+{
+  "meta": {
+    "title": "Thailand Rice Supplier | Bulk Rice Exporter | TAT Global",
+    "description": "TAT Global Co., Ltd — premium Thai jasmine rice manufacturer and bulk rice exporter. Supplying importers, distributors, and wholesalers in 40+ countries.",
+    "ogDescription": "Premium Thai Rice — Manufactured and Exported from Thailand to the World.",
+    "titleSuffix": " | TAT GLOBAL CO., LTD"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNavLabel": "Main navigation",
+    "mobileNavLabel": "Mobile navigation",
+    "openMobileNav": "Open menu",
+    "closeMobileNav": "Close menu"
+  },
+  "seo": {
+    "home": {
+      "title": "Premium Thai Bulk Rice Manufacturer & Global Exporter",
+      "description": "TAT Global manufactures and exports jasmine, white, and specialty rice worldwide. Bulk supply, certifications, flexible packaging — export team responds within 24 hours."
+    },
+    "about": {
+      "title": "About TAT Global — Thai Rice Manufacturing Since Decades",
+      "description": "Thailand bulk rice manufacturer and international distributor serving importers across 40+ countries. GMP, HACCP, ISO 22000 and full export documentation."
+    },
+    "products": {
+      "title": "Bulk Rice Catalogue — Jasmine, White, Long Grain & More",
+      "description": "Explore 22 Thai rice varieties — jasmine, white, long grain, broken, glutinous, parboiled, and specialty grades — direct from Thai mills."
+    },
+    "quality": {
+      "title": "Quality Assurance — Rice Milling & Lab Standards",
+      "description": "From paddy to port with GMP, HACCP, COA and phytosanitary certificates. Third-party inspection available for global importers."
+    },
+    "packaging": {
+      "title": "Packaging & Export Logistics — FCL from Thailand",
+      "description": "Retail bags to 1MT jumbo sacks, private label, FOB Laem Chabang/Bangkok, flexible Incoterms. Complete documentation support."
+    },
+    "markets": {
+      "title": "Global Export Markets — Bulk Rice Buyers Worldwide",
+      "description": "Supplying ASEAN, Middle East, Africa, Europe, Americas, and South Asia. Documentation aligned with rice-import regulations."
+    },
+    "faq": {
+      "title": "FAQ — MOQ, Private Label & Shipping Terms",
+      "description": "Minimum order quantities, certifications, sampling, Lead times, MOQ policies, quote response times — questions for wholesale rice buyers."
+    },
+    "contact": {
+      "title": "Contact Export Sales — Thai Rice Quotes",
+      "description": "Reach TAT Global for bulk rice quotations, MOQ scheduling, specs, and shipments. Responses within one business day on average."
+    },
+    "privacy": {
+      "title": "Privacy Policy — TAT Global Co., Ltd",
+      "description": "How TAT Global collects, uses, and protects business contact data from quote requests, contact forms, and newsletter sign-ups."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "quality": "Quality Assurance",
+    "packaging": "Packaging & Logistics",
+    "markets": "Export Markets",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "topbar": {
+    "email": "sales@tatglcoltd.com",
+    "tagline": "Exporting Premium Thai Rice to 40+ Countries"
+  },
+  "lang": {
+    "toggle": "EN / TH",
+    "switchToEnglish": "English",
+    "switchToThai": "ภาษาไทย",
+    "switchAria": "Switch language"
+  },
+  "cta": {
+    "requestQuote": "Request a Quote",
+    "requestQuoteArrow": "Request a Quote →",
+    "viewProducts": "View Products",
+    "exploreProducts": "Explore Our Products",
+    "contactSales": "Contact Sales",
+    "contactSalesTeam": "Contact Our Sales Team",
+    "learnMore": "Learn More",
+    "learnMoreArrow": "Learn More About Us →",
+    "viewDetails": "View Details →",
+    "viewSpecs": "View Specifications",
+    "requestQuoteCard": "Request Quote",
+    "sendInquiry": "Send Inquiry",
+    "chatWhatsApp": "Chat on WhatsApp"
+  },
+  "floating": {
+    "whatsappAria": "Contact TAT Global on WhatsApp",
+    "whatsappPrefill": "Hello, I'm interested in bulk Thai rice exports from TAT Global.",
+    "stickyPitch": "Ready to order? Talk to our export team.",
+    "stickyCta": "Request Quote →",
+    "cookieRegionAria": "Cookie notice",
+    "cookieText": "We use essential cookies so this website works smoothly and remembers simple preferences such as cookie consent. By continuing, you agree to these cookies.",
+    "cookiePrivacy": "Read our <privacyLink>Privacy Policy</privacyLink>.",
+    "cookieAccept": "Accept"
+  },
+  "hero": {
+    "eyebrow": "Thailand's Premier Bulk Rice Manufacturer",
+    "headline": "Premium Thai Rice — Grown in Thailand. Trusted Worldwide.",
+    "subheadline": "We supply bulk jasmine rice, white rice, glutinous rice and more to importers, wholesalers, and distributors across 40+ countries. Reliable supply. Export-certified. Built for global trade.",
+    "scrollLabel": "Scroll",
+    "scrollIndicator": "Scroll to trust highlights"
+  },
+  "heroTrust": "✓ No minimum hassle — flexible MOQ  ✓ Fast quote response (within 24h)  ✓ GMP & HACCP certified",
+  "trustBar": {
+    "yearsExperience": "Years Experience",
+    "exportCountries": "Export Countries",
+    "mtAnnualCapacity": "MT Annual Capacity",
+    "riceVarieties": "Rice Varieties",
+    "qualityCertifications": "Quality Certifications",
+    "responseTime": "Response Time"
+  },
+  "about": {
+    "label": "About TAT Global",
+    "headline": "A Trusted Name in Thai Rice Manufacturing Since Decades",
+    "body1": "TAT GLOBAL CO., LTD is a Thailand-based bulk rice manufacturer and international distributor committed to delivering premium quality rice to buyers worldwide. Operating from the heart of Thailand's rice belt, we manage every step of the supply chain — from paddy sourcing and milling to export documentation and container loading.",
+    "body2": "With decades of experience in the Thai agricultural industry, we serve international importers, food distributors, supermarket chains, hospitality suppliers, and government procurement agencies across Asia, the Middle East, Africa, Europe, and the Americas.",
+    "body3": "Our facilities operate under internationally recognized food safety standards including GMP, HACCP, and ISO 22000. Every shipment is supported by full export documentation: Certificates of Analysis, Phytosanitary Certificates, Certificates of Origin, and Halal certification (where required).",
+    "stat1": "50,000+ MT Annual Production Capacity",
+    "stat2": "40+ Countries Served",
+    "stat3": "7+ Rice Varieties Available",
+    "stat4": "24h Average Quote Response Time"
+  },
+  "aboutPage": {
+    "manufacturingTitle": "Manufacturing Capacity",
+    "certificationsTitle": "Certifications",
+    "ctaHeadline": "Looking for a Reliable Thai Rice Supplier?",
+    "ctaBody": "Request a competitive quote today and get a response from our export team within 24 hours. No obligation — just a conversation about your requirements."
+  },
+  "products": {
+    "label": "Our Products",
+    "headline": "Premium Rice Varieties for Every Market",
+    "subheadline": "From fragrant jasmine to industrial broken rice — all sourced, milled, and exported directly from Thailand.",
+    "searchPlaceholder": "Search rice varieties",
+    "filterVarietyAll": "All Varieties",
+    "filterGrainAll": "All Grain Types",
+    "filterPackagingAll": "All Packaging",
+    "noResults": "No products match your filters.",
+    "gallery": {
+      "label": "Product image gallery",
+      "prev": "Previous image",
+      "next": "Next image",
+      "thumbnailsLabel": "Gallery thumbnails",
+      "viewImage": "View image {n}: {caption}",
+      "imageAlt": "{product} — {caption}",
+      "captions": {
+        "product": "Product grade",
+        "grains": "Grain close-up",
+        "facility": "Milling & processing",
+        "origin": "Thai rice origin",
+        "packaging": "Export packaging"
+      }
+    },
+    "catalog": {
+      "1121_sella_basmati_rice": {
+        "name": "1121 Sella Basmati Rice",
+        "shortDescription": "Long-grain marvel with elongated grains ideal for biryanis and pilafs. Distinct Basmati fragrance and non-sticky texture after cooking.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Length: 8.2mm to 8.4mm",
+        "moistureSpec": "Moisture: Optimal levels maintained",
+        "brokenSpec": "Purity: Free from impurities, stones, and foreign matter",
+        "fullDescription": "1121 Sella Basmati Rice is a revered variant known for superior quality. Grains measure 8.2mm to 8.4mm for an extraordinary culinary experience, with captivating Basmati aroma and delicate, non-sticky texture post-cooking. TAT Global processes and curates each batch to preserve natural essence and nutritional richness, with rigorous quality control and export-ready inventory meeting international benchmarks.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "1121 Sella Basmati Rice"
+          },
+          {
+            "attribute": "Grain Length",
+            "value": "8.2mm to 8.4mm"
+          },
+          {
+            "attribute": "Aroma",
+            "value": "Distinct Basmati fragrance"
+          },
+          {
+            "attribute": "Texture",
+            "value": "Delicate, non-sticky post-cooking"
+          },
+          {
+            "attribute": "Purity",
+            "value": "Free from impurities, stones, and foreign matter"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "Optimal levels maintained"
+          }
+        ]
+      },
+      "arborio_rice": {
+        "name": "Arborio Rice",
+        "shortDescription": "Medium to short plump grains with pearly appearance. Moisture ≤14%, purity assured, uniform grain size. In stock ready to ship.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Size: Medium to short, plump, rounded",
+        "moistureSpec": "Moisture Content: ≤ 14%",
+        "brokenSpec": "Foreign Matter: Nil",
+        "fullDescription": "Arborio Rice (Oryza sativa var. Arborio) features medium to short grains with a plump, rounded shape and distinct pearly appearance. Known for absorbing liquids while retaining a firm exterior and creamy interior when cooked — ideal for risotto and gourmet dishes. TAT Global supplies export-grade Arborio rice for restaurants, hotels, and food manufacturers.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Arborio Rice (Oryza sativa var. Arborio)"
+          },
+          {
+            "attribute": "Grain Size",
+            "value": "Medium to short, plump, pearly"
+          },
+          {
+            "attribute": "Texture",
+            "value": "Firm exterior, creamy interior when cooked"
+          },
+          {
+            "attribute": "Cooking Qualities",
+            "value": "Ideal for risotto; releases starch"
+          },
+          {
+            "attribute": "Moisture Content",
+            "value": "≤ 14%"
+          },
+          {
+            "attribute": "Broken Grains",
+            "value": "< 5%"
+          }
+        ]
+      },
+      "irri_6_long_grain_rice": {
+        "name": "IRRI-6 Long Grain Rice",
+        "shortDescription": "Premium IRRI-6 long grain rice — outstanding quality and versatile use from everyday meals to gourmet cuisine.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Length: 6.0 mm (minimum average)",
+        "moistureSpec": "Moisture Content: 14% max",
+        "brokenSpec": "Broken Grains: 5% max",
+        "fullDescription": "IRRI-6 Long Grain Rice is renowned for long, slender grains that remain separate and fluffy after cooking — ideal for pilafs, biryanis, stir-fries, and side dishes. Mild taste and subtle aroma enhance flavors without overpowering. Rich in carbohydrates and essential nutrients. Each grain is carefully cleaned and polished; cultivated using sustainable practices.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "IRRI-6 Long Grain Rice"
+          },
+          {
+            "attribute": "Grain Length",
+            "value": "6.0 mm (minimum average)"
+          },
+          {
+            "attribute": "Moisture Content",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Broken Grains",
+            "value": "5% max"
+          },
+          {
+            "attribute": "Foreign Matter",
+            "value": "0.1% max"
+          },
+          {
+            "attribute": "Polishing Grade",
+            "value": "Double polished"
+          }
+        ]
+      },
+      "japonica_rice": {
+        "name": "Japonica Rice",
+        "shortDescription": "Short to medium-grain rice with sticky, firm cooking texture. Opalescent white grains with glossy sheen. Moisture below 14%; broken grains less than 5%.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Type: Short to medium-grain, slightly plump",
+        "moistureSpec": "Moisture Content: Typically below 14%",
+        "brokenSpec": "Broken Grains: Less than 5%",
+        "fullDescription": "Japonica Rice (Oryza sativa japonica) is revered for exceptional quality and Japanese heritage. Sticky consistency ideal for sushi, onigiri, and Japanese-inspired dishes; subtle sweetness enhances accompanying flavors. Milled and polished to opalescent white with glossy sheen. Compliant with ISO, HACCP, and international food safety standards.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Japonica Rice (Oryza sativa japonica)"
+          },
+          {
+            "attribute": "Grain Type",
+            "value": "Short to medium-grain"
+          },
+          {
+            "attribute": "Color",
+            "value": "Opalescent white with glossy sheen"
+          },
+          {
+            "attribute": "Cooking Texture",
+            "value": "Sticky and firm"
+          },
+          {
+            "attribute": "Moisture Content",
+            "value": "Typically below 14%"
+          },
+          {
+            "attribute": "Foreign Matter",
+            "value": "Nil"
+          }
+        ]
+      },
+      "jasmine_rice_thai_hom_mali": {
+        "name": "Jasmine Rice (Thai Hom Mali)",
+        "shortDescription": "Fragrant Thai Hom Mali Jasmine Rice — aromatic excellence from Thailand. Premium long-grain rice from Thailand's finest growing regions.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long Grain Rice",
+        "moistureSpec": "Moisture: 14% Max",
+        "brokenSpec": "Broken (5.2 mm): 4.5% Max",
+        "fullDescription": "Thai Hom Mali Jasmine Rice embodies fragrance and quality. Long-grained with nutty smell and delicate pandan aroma — a key Thai export from the north and central eastern regions. Hom Mali refers to pandan/screwpine aroma; the Jasmine trade name reflects the white grain. Finest class grown in Ubon Ratchathani, Buriram, Sisaket, Roi Et, Yasothon, and Surin. TAT Global mills to export grade with ISO, HACCP, and Thai Agricultural Standards (TAS) compliance.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Purity",
+            "value": "92%"
+          },
+          {
+            "attribute": "Whole Kernels",
+            "value": "60% Max"
+          },
+          {
+            "attribute": "Broken (5.2 mm)",
+            "value": "4.5% Max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% Max"
+          },
+          {
+            "attribute": "Admixture",
+            "value": "2% Max"
+          },
+          {
+            "attribute": "Country of Origin",
+            "value": "Thailand"
+          }
+        ],
+        "badge": "⭐ Best Seller",
+        "shipping": "FCL 20ft = 20 MT; FCL 40ft = 27 MT",
+        "storage": "Cool, dry place away from direct sunlight"
+      },
+      "parboiled_rice_5_broken": {
+        "name": "Parboiled Rice 5% Broken",
+        "shortDescription": "Five Percent Broken Parboiled Long and Medium Grain Rice — rich aroma, good taste, and high nutritious value.",
+        "availability": "In Stock",
+        "grainSpec": "Typical Grain Length: 6mm & beyond",
+        "moistureSpec": "Moisture: 14% max",
+        "brokenSpec": "Broken (2/3 basis): 5% Max",
+        "fullDescription": "5% Broken Parboiled Rice is treated using advanced technologies and global industrial standards. Known for rich aroma, good taste, and high nutritious value. Customized packaging available upon request. TAT Global supplies export-grade parboiled rice for international buyers.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Grade",
+            "value": "PARBOILED RICE IR-36/64"
+          },
+          {
+            "attribute": "Broken",
+            "value": "5% Max (2/3 basis)"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Whole Grain Kernels",
+            "value": "70% min"
+          },
+          {
+            "attribute": "Length to breadth ratio",
+            "value": "2.5 & beyond"
+          },
+          {
+            "attribute": "Foreign Matter / Damaged",
+            "value": "1% max"
+          }
+        ],
+        "shipping": "Delivery: 15–30 days after payment confirmation"
+      },
+      "quality_brown_rice": {
+        "name": "Quality Brown Rice",
+        "shortDescription": "Premium Brown Rice — nutritious whole grain with nutty flavor and chewy texture. Packed with fiber, essential nutrients, and antioxidants.",
+        "availability": "In Stock",
+        "grainSpec": "Average Grain Length: 6.00 to 6.50 mm",
+        "moistureSpec": "Moisture Content: Not exceeding 14%",
+        "brokenSpec": "Broken Grains: Max 5%",
+        "fullDescription": "Brown Rice is a wholesome choice combining health and taste. Minimal processing retains the bran layer, germ, and nutrient-rich qualities. Medium to long grains with earthy hues, distinct chewy texture and nutty flavor — ideal for pilafs, stir-fries, and salads. High fiber, essential minerals, B vitamins, and antioxidants promote digestive health and overall well-being.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Moisture Content",
+            "value": "Not exceeding 14%"
+          },
+          {
+            "attribute": "Total Ash",
+            "value": "Max 2.0%"
+          },
+          {
+            "attribute": "Broken Grains",
+            "value": "Max 5%"
+          },
+          {
+            "attribute": "Foreign Matter",
+            "value": "Max 0.5%"
+          },
+          {
+            "attribute": "Average Grain Length",
+            "value": "6.00 to 6.50 mm"
+          },
+          {
+            "attribute": "Mill Degree",
+            "value": "Well milled and polished"
+          }
+        ]
+      },
+      "irri_9_long_grain_rice": {
+        "name": "RRI 9 Long Grain Rice",
+        "shortDescription": "IRRI 9 Long Grain Rice — long, slender grains that remain separate and fluffy after cooking. Subtle aroma and delicate flavor.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Length: 6.8 mm (minimum average)",
+        "moistureSpec": "Moisture Content: 14% max",
+        "brokenSpec": "Broken Grains: 5% max",
+        "fullDescription": "IRRI 9 Long Grain Rice is celebrated for long, slender grains ideal for biryani, pilaf, side dishes, and rice salads. Mild taste complements a wide range of ingredients and spices. Rich in carbohydrates, vitamins, and minerals. Meticulously cleaned and polished; cultivated using sustainable agricultural practices.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "IRRI 9 Long Grain Rice"
+          },
+          {
+            "attribute": "Grain Length",
+            "value": "6.8 mm (minimum average)"
+          },
+          {
+            "attribute": "Moisture Content",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Broken Grains",
+            "value": "5% max"
+          },
+          {
+            "attribute": "Foreign Matter",
+            "value": "0.5% max"
+          },
+          {
+            "attribute": "Polishing Grade",
+            "value": "Double polished"
+          }
+        ]
+      },
+      "thai_brown_jasmine_rice": {
+        "name": "Thai Brown Jasmine Rice",
+        "shortDescription": "Whole-grain aromatic jasmine rice retaining the outer bran layer for added nutrition, nuttier flavor, and chewier texture.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long Grain Rice | Shape: Long | Colour: Brown",
+        "moistureSpec": "Crop Year: Current",
+        "brokenSpec": "Kind: Aromatic Rice | Cultivation: Organic",
+        "fullDescription": "Brown Jasmine Rice retains its outer bran layer for a nuttier flavor and chewier texture compared to white jasmine rice. Higher fiber, vitamins, and minerals — an excellent whole-grain choice. Requires slightly more water and longer cooking time; the added nutritional benefits and unique flavor profile are well worth the effort.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Long Grain Rice"
+          },
+          {
+            "attribute": "Shape",
+            "value": "Long"
+          },
+          {
+            "attribute": "Colour",
+            "value": "Brown"
+          },
+          {
+            "attribute": "Kind",
+            "value": "Aromatic Rice"
+          },
+          {
+            "attribute": "Cultivation Type",
+            "value": "Organic"
+          },
+          {
+            "attribute": "Crop Year",
+            "value": "Current"
+          }
+        ]
+      },
+      "thai_glutinous_rice": {
+        "name": "Thai Glutinous Rice",
+        "shortDescription": "Traditional sticky rice (khao niao) — short to medium grains, intensely sticky when cooked. Naturally sweet flavor with subtle aroma.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Size: Short to medium, plump, round",
+        "moistureSpec": "Moisture Content: Not exceeding 14%",
+        "brokenSpec": "Brokens: 12.00% max (10% broken grade)",
+        "fullDescription": "Glutinous rice is gluten-free despite its name — known for sticky, chewy texture when cooked. Used in mango sticky rice, Thai curries, rice dumplings, and desserts. Rich in carbohydrates with manganese, fiber, and essential vitamins. TAT Global supplies export-grade Thai glutinous rice in bulk and retail packaging.",
+        "moq": "10 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Glutinous Rice (Oryza sativa var. glutinosa)"
+          },
+          {
+            "attribute": "Texture",
+            "value": "Sticky, chewy when cooked"
+          },
+          {
+            "attribute": "Whole kernels",
+            "value": "55.00% min"
+          },
+          {
+            "attribute": "Brokens",
+            "value": "12.00% max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14.00% max"
+          },
+          {
+            "attribute": "Milling degree",
+            "value": "Well Milled"
+          }
+        ]
+      },
+      "thai_glutinous_rice_25_broken": {
+        "name": "Thai Glutinous Rice 25% Broken",
+        "shortDescription": "Glutinous rice with 25% broken grains — sticky texture maintained; suitable for commercial and industrial use.",
+        "availability": "In Stock",
+        "grainSpec": "Whole kernels: 40.00% min",
+        "moistureSpec": "Moisture: 14.00% max",
+        "brokenSpec": "Brokens & Small Brokens: 28.00% max",
+        "fullDescription": "Thai Glutinous Rice 25% Broken grade with detailed export specifications for sticky rice applications. Maintains inherent sticky texture for commercial food manufacturing and industrial use.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Whole kernels",
+            "value": "40.00% min"
+          },
+          {
+            "attribute": "Brokens & Small Brokens",
+            "value": "28.00% max"
+          },
+          {
+            "attribute": "Red/undermilled kernels",
+            "value": "6.00% max"
+          },
+          {
+            "attribute": "Yellow kernels",
+            "value": "4.00% max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14.00% max"
+          },
+          {
+            "attribute": "Milling degree",
+            "value": "Ordinarily Milled"
+          }
+        ]
+      },
+      "thai_hom_patum_rice": {
+        "name": "Thai Hom Patum Rice",
+        "shortDescription": "Pathum Thani fragrant rice (RD31) — certified fragrant rice with soft texture when freshly cooked; texture firms as it cools.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long Grain Rice",
+        "moistureSpec": "Moisture: 14% Max",
+        "brokenSpec": "Broken (5.2 mm): 4.5% Max",
+        "fullDescription": "Thai Hom Patum (Pathumthani Fragrant Rice) is developed at Thailand's Pathum Thani rice institute. With appearance, soft texture, and fragrance similar to Thai jasmine rice, it is considered a second sort of Thai Hom Mali. Export-grade milling with Extra Well Milled degree.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Purity",
+            "value": "80%"
+          },
+          {
+            "attribute": "Whole Kernels",
+            "value": "60% Max"
+          },
+          {
+            "attribute": "Broken (5.2 mm)",
+            "value": "4.5% Max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% Max"
+          },
+          {
+            "attribute": "Milling Degree",
+            "value": "Extra Well Milled"
+          },
+          {
+            "attribute": "Country of Origin",
+            "value": "Thailand"
+          }
+        ]
+      },
+      "thai_jasmine_black_cargo_rice": {
+        "name": "Thai Jasmine Black Cargo Rice",
+        "shortDescription": "Black cargo rice with good taste and unique fragrance. Only husk removed to retain nutrients, vitamins, and minerals.",
+        "availability": "In Stock",
+        "grainSpec": "Color: Black | Kind: Whole-grain cargo",
+        "moistureSpec": "Processing: Husk removed only",
+        "brokenSpec": "Retains bran nutrients",
+        "fullDescription": "Thai Jasmine Black Cargo Rice is black in color with good taste and unique fragrance. Only its husk has been removed to retain nutrients, vitamins, and minerals including vitamin B1, B2, B complex, iron, magnesium, phosphorus, calcium, niacin, and fiber.",
+        "moq": "10 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Color",
+            "value": "Black"
+          },
+          {
+            "attribute": "Processing",
+            "value": "Husk removed only"
+          },
+          {
+            "attribute": "Vitamin B1, B2, B complex",
+            "value": "Retained"
+          },
+          {
+            "attribute": "Minerals",
+            "value": "Iron, Magnesium, Phosphorus, Calcium"
+          },
+          {
+            "attribute": "Fiber",
+            "value": "Retained in bran"
+          },
+          {
+            "attribute": "Origin",
+            "value": "Thailand"
+          }
+        ]
+      },
+      "thai_jasmine_red_cargo_rice": {
+        "name": "Thai Jasmine Red Cargo Rice",
+        "shortDescription": "Non-glutinous long-grain red cargo rice. Only rice grain shells removed, retaining vitamins, nutrients, and minerals in the bran and kernel.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long Grain Rice | Color: Red",
+        "moistureSpec": "Moisture: 14% Max",
+        "brokenSpec": "Admixture: 2% Max",
+        "fullDescription": "Thai Red Cargo Rice is a worthy source of riboflavin (vitamin B2), thiamin (vitamin B1), iron, fiber, and calcium. More aromatic and nutty when cooked; takes longer to cook than white rice but not as long as brown rice. High-quality Red Cargo Rice exported from Thailand.",
+        "moq": "10 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Texture",
+            "value": "Soft"
+          },
+          {
+            "attribute": "Kind",
+            "value": "Brown Rice"
+          },
+          {
+            "attribute": "Variety",
+            "value": "Long Grain Rice"
+          },
+          {
+            "attribute": "Color",
+            "value": "Red"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% Max"
+          },
+          {
+            "attribute": "Crop Year",
+            "value": "Current"
+          }
+        ]
+      },
+      "thai_long_grain_rice": {
+        "name": "Thai Long Grain Rice",
+        "shortDescription": "Premium Thai long-grain white rice — delicate aroma, superior taste, elongated grains that cook fluffy. Versatile for traditional Thai and international cuisine.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long-Grain Rice | Broken Ratio: 25%",
+        "moistureSpec": "Max. Moisture: 14%",
+        "brokenSpec": "Admixture: 11%",
+        "fullDescription": "Thai Long Grain Rice (Oryza sativa) features extra-long, slender grains milled and polished to perfection. Translucent white grains with moisture below 14%, broken grains below 5%, and no foreign matter. Renowned for delicate aroma, superior taste, and grains that cook perfectly fluffy. Packed with essential nutrients, vitamins, and minerals.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Kind",
+            "value": "White Rice"
+          },
+          {
+            "attribute": "Variety",
+            "value": "Long-Grain Rice"
+          },
+          {
+            "attribute": "Color",
+            "value": "White"
+          },
+          {
+            "attribute": "Broken Ratio",
+            "value": "25%"
+          },
+          {
+            "attribute": "Max. Moisture",
+            "value": "14%"
+          },
+          {
+            "attribute": "Style",
+            "value": "Dried"
+          }
+        ],
+        "storage": "Cool, dry place away from direct sunlight"
+      },
+      "thai_parboiled_rice": {
+        "name": "Thai Parboiled Rice",
+        "shortDescription": "Premium Thai parboiled rice — steam-parboiled medium to long grains with translucent golden color. Retains nutrients; cooks firm and separate.",
+        "availability": "In Stock",
+        "grainSpec": "Grain Type: Medium to long grains",
+        "moistureSpec": "Moisture Content: Below 14%",
+        "brokenSpec": "Broken Grains: Less than 5%",
+        "fullDescription": "Premium Thai Parboiled Rice undergoes special parboiling that preserves nutrients, resulting in firmer, less sticky grains with a golden hue. Nutty, slightly earthy taste; retains more vitamins and minerals; lower glycemic index. Ideal for pilafs, salads, casseroles, and global cuisines. ISO, HACCP, and TAS certified.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Thai Parboiled Rice"
+          },
+          {
+            "attribute": "Processing",
+            "value": "Parboiled to retain nutrients"
+          },
+          {
+            "attribute": "Color",
+            "value": "Translucent golden"
+          },
+          {
+            "attribute": "Moisture Content",
+            "value": "Below 14%"
+          },
+          {
+            "attribute": "Broken Grains",
+            "value": "Less than 5%"
+          },
+          {
+            "attribute": "Foreign Matter",
+            "value": "Nil"
+          }
+        ],
+        "storage": "Shelf life up to 2 years under recommended storage"
+      },
+      "thai_riceberry_rice": {
+        "name": "Thai Riceberry Rice",
+        "shortDescription": "Purple whole-grain Thai specialty rice — rich in antioxidants, vitamins, and minerals. Origin: Thailand.",
+        "availability": "In Stock",
+        "grainSpec": "Origin: Thailand | Type: Purple whole-grain",
+        "moistureSpec": "Bran retained for nutrients",
+        "brokenSpec": "Cross: Thai Hom Mali × local black rice",
+        "fullDescription": "Thai Riceberry Rice is a Thai purple rice variety developed from a cross between Thai Hom Mali (jasmine) and local black rice. Deep purple-burgundy bran when raw; nutty aroma and soft, slightly chewy texture when cooked. Retains bran for higher fiber, antioxidants (anthocyanins), and micronutrients compared to white rice.",
+        "moq": "10 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Origin",
+            "value": "Thailand"
+          },
+          {
+            "attribute": "Type",
+            "value": "Purple whole-grain specialty"
+          },
+          {
+            "attribute": "Parentage",
+            "value": "Hom Mali × black rice"
+          },
+          {
+            "attribute": "Bran Color",
+            "value": "Purple-burgundy"
+          },
+          {
+            "attribute": "Antioxidants",
+            "value": "Anthocyanins (bran retained)"
+          },
+          {
+            "attribute": "Texture",
+            "value": "Soft, slightly chewy when cooked"
+          }
+        ]
+      },
+      "thai_white_rice_10_broken": {
+        "name": "Thai White Rice 10% Broken",
+        "shortDescription": "Long Grain White Rice (10% Broken) — known for quality, non-stickiness, and taste. Available in different packaging quantities.",
+        "availability": "In Stock",
+        "grainSpec": "Broken on 2/3rd Basis: 10% Max",
+        "moistureSpec": "Moisture: 14% Max",
+        "brokenSpec": "Milling Degree: Well Milled 100% sortexed clean",
+        "fullDescription": "Long Grain White Rice 10% broken — premium quality at competitive pricing for global buyers. Export-grade milling with well-milled, 100% sortexed clean specification.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Broken on 2/3rd Basis",
+            "value": "10% Max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% Max"
+          },
+          {
+            "attribute": "Damaged/Discolored",
+            "value": "2% Max"
+          },
+          {
+            "attribute": "Red/Red Streak",
+            "value": "0.25% Max"
+          },
+          {
+            "attribute": "Whiteness",
+            "value": "40deg kett Minimum"
+          },
+          {
+            "attribute": "Color",
+            "value": "White"
+          }
+        ]
+      },
+      "thai_white_rice_100_broken": {
+        "name": "Thai White rice 100% broken",
+        "shortDescription": "100% broken white rice grade — suitable for industrial use, animal feed, rice flour, and food manufacturing.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: White Broken",
+        "moistureSpec": "Moisture: 14% max",
+        "brokenSpec": "Broken: 100% Max",
+        "fullDescription": "Thai White Rice 100% broken — premium broken rice grade for industrial and food processing applications. Consistent quality for rice flour, animal feed, brewing, and food manufacturing.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "White Broken"
+          },
+          {
+            "attribute": "Broken",
+            "value": "100% Max"
+          },
+          {
+            "attribute": "Colour",
+            "value": "White/Yellow"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Foreign matters",
+            "value": "0.1% Max"
+          },
+          {
+            "attribute": "Country of Origin",
+            "value": "Thailand"
+          }
+        ]
+      },
+      "thai_white_rice_100_sortexed": {
+        "name": "Thai White Rice 100% Sortexed",
+        "shortDescription": "Premium sortexed white rice — long, slender, fluffy grains. Sortex technology removes broken grains, stones, and husks for uniform quality.",
+        "availability": "In Stock",
+        "grainSpec": "Long grain class 1: 70.00% min",
+        "moistureSpec": "Moisture: 14.00% max",
+        "brokenSpec": "Brokens: 4.00% max",
+        "fullDescription": "Thai White Rice 100% sortexed is a premium variety meticulously sorted for exceptional quality. Sourced from Thailand's fertile fields — pure white grains that are long, slender, and fluffy. Sortexing removes impurities; only the finest, most uniform grains remain. Extra Well Milled degree.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Long grain class 1",
+            "value": "70.00% min"
+          },
+          {
+            "attribute": "Whole kernels",
+            "value": "60.00% min"
+          },
+          {
+            "attribute": "Brokens",
+            "value": "4.00% max"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14.00% max"
+          },
+          {
+            "attribute": "Milling degree",
+            "value": "Extra Well Milled"
+          },
+          {
+            "attribute": "Foreign matter",
+            "value": "0.10% max"
+          }
+        ],
+        "badge": "🏆 Top Export",
+        "shipping": "FCL 20ft = 21–22 MT; FCL 40ft = 26–27 MT"
+      },
+      "thai_white_rice_25_broken": {
+        "name": "Thai White Rice 25% Broken",
+        "shortDescription": "Long Grain White Rice (25% Broken) — best quality for global buyers. Economical pricing with fragrance and rich minerals.",
+        "availability": "In Stock",
+        "grainSpec": "Broken on 2/3rd Basis: 25% Max",
+        "moistureSpec": "Moisture: 14% max",
+        "brokenSpec": "Whole Kernel Length: 5.8–6.2mm",
+        "fullDescription": "Long Grain White Rice 25% Broken — widely used in food manufacturing for fragrance, vitamin content, and rich minerals. Well milled, 100% sortexed clean specification.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Broken on 2/3rd Basis",
+            "value": "25% Max"
+          },
+          {
+            "attribute": "Whole Kernel Length",
+            "value": "5.8–6.2mm"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Milling Degree",
+            "value": "Well Milled 100% sortexed clean"
+          },
+          {
+            "attribute": "Color",
+            "value": "White"
+          },
+          {
+            "attribute": "Crop Year",
+            "value": "Current"
+          }
+        ]
+      },
+      "white_rice_5_broken": {
+        "name": "White Rice 5% Broken",
+        "shortDescription": "Thai White Rice 5% Broken — superior quality long-grain white rice at competitive pricing.",
+        "availability": "In Stock",
+        "grainSpec": "Variety: Long Grain Rice",
+        "moistureSpec": "Moisture: 14% max",
+        "brokenSpec": "Broken: 5% Max",
+        "fullDescription": "Premium 5 Percent White Rice for global export buyers. Long-grain white rice with soft texture, well milled and polished. Current crop year from Thailand.",
+        "moq": "20 MT",
+        "technicalSpecifications": [
+          {
+            "attribute": "Variety",
+            "value": "Long Grain Rice"
+          },
+          {
+            "attribute": "Broken",
+            "value": "5% Max"
+          },
+          {
+            "attribute": "Colour",
+            "value": "White"
+          },
+          {
+            "attribute": "Moisture",
+            "value": "14% max"
+          },
+          {
+            "attribute": "Milling Degree",
+            "value": "Well Milled & Polished"
+          },
+          {
+            "attribute": "Country of Origin",
+            "value": "Thailand"
+          }
+        ],
+        "shipping": "FCL 20ft = 21–22 MT; FCL 40ft = 26–27 MT"
+      }
+    }
+  },
+  "filters": {
+    "jasmine": "Jasmine",
+    "white": "White",
+    "longGrain": "Long Grain",
+    "broken": "Broken",
+    "glutinous": "Glutinous",
+    "parboiled": "Parboiled",
+    "specialty": "Specialty",
+    "grainLong": "Long Grain",
+    "grainShort": "Short/Medium",
+    "grainBroken": "Broken",
+    "grainMixed": "Mixed",
+    "packRetail": "Retail",
+    "pack25": "25kg Bags",
+    "pack50": "50kg Bags",
+    "packJumbo": "1MT Jumbo",
+    "packBulk": "Bulk",
+    "packPrivate": "Private Label"
+  },
+  "whyUs": {
+    "label": "Why TAT Global",
+    "headline": "The Export Partner International Buyers Trust",
+    "r1Title": "Thailand-Origin Quality",
+    "r1Desc": "All rice sourced directly from Thailand's top growing regions. Authenticity guaranteed.",
+    "r2Title": "Certified Manufacturing",
+    "r2Desc": "GMP, HACCP, and ISO 22000 certified facilities. Food safety is non-negotiable.",
+    "r3Title": "Competitive Bulk Pricing",
+    "r3Desc": "Direct-from-mill pricing with no middlemen. Cost-efficient for large orders.",
+    "r4Title": "Packaging Flexibility",
+    "r4Desc": "From 5kg retail bags to 1MT jumbo bulk bags. Private label available.",
+    "r5Title": "Export Documentation",
+    "r5Desc": "Full suite: COA, Phytosanitary, COO, Bill of Lading. Zero paperwork headaches.",
+    "r6Title": "Responsive Sales Team",
+    "r6Desc": "Quote within 24 hours. Dedicated account manager for every buyer."
+  },
+  "quality": {
+    "label": "Quality Assurance",
+    "headline": "From Paddy to Port — Zero Compromise on Quality",
+    "certHeadline": "Our Certifications",
+    "certBody": "Every batch ships with documentation that meets the import requirements of your country.",
+    "thirdPartyTitle": "Third-party inspection",
+    "thirdPartyBody": "Optional SGS, Bureau Veritas, or Intertek inspection available.",
+    "step1": "Paddy Sourcing — We partner with certified Thai farmers in premium growing zones.",
+    "step2": "Pre-Milling Inspection — Moisture, grain size, and contamination checks before processing.",
+    "step3": "Precision Milling — State-of-the-art milling lines calibrated for consistent broken percentage.",
+    "step4": "Post-Milling Grading — Whiteness, grain length, and purity graded by our quality lab.",
+    "step5": "Third-Party Inspection — Optional SGS, Bureau Veritas, or Intertek inspection available.",
+    "step6": "Export Certification — All required certificates issued before shipment."
+  },
+  "qualityPage": {
+    "pageTitle": "Quality Assurance",
+    "pageHeadline": "From Paddy to Port — Zero Compromise on Quality"
+  },
+  "packaging": {
+    "label": "Packaging & Logistics",
+    "headline": "Flexible Packaging. Reliable Export Logistics.",
+    "typesTitle": "Packaging types",
+    "containerTitle": "Container info",
+    "shippingTitle": "Shipping support",
+    "p1": "Retail Bags: 500g, 1kg, 2kg, 5kg — ideal for supermarket and specialty retail",
+    "p2": "Commercial Bags: 10kg, 25kg PP woven bags — standard for food service and distributors",
+    "p3": "Industrial Bags: 50kg PP woven bags — wholesale and institutional supply",
+    "p4": "Jumbo Bags: 1,000kg (1MT) big bags — bulk industrial and feed applications",
+    "p5": "Private Label: Custom printing, any language, any market specification",
+    "c1": "20ft FCL = approximately 20–22 MT",
+    "c2": "40ft FCL = approximately 26–28 MT",
+    "c3": "Fumigation certificate available",
+    "c4": "Stacking height compliant",
+    "s1": "FOB Bangkok / Laem Chabang Port",
+    "s2": "CIF available upon request",
+    "s3": "We work with leading freight forwarders globally",
+    "s4": "Estimated transit times available per destination"
+  },
+  "packagingPage": {
+    "pageTitle": "Packaging & Logistics",
+    "pageHeadline": "Flexible Packaging. Reliable Export Logistics.",
+    "bagTitle": "Bag types",
+    "containerSpecsTitle": "Container specs",
+    "shippingTermsTitle": "Shipping terms",
+    "privateProgramTitle": "Private label program",
+    "privateProgramBody": "We offer a complete private label program including custom bag printing in any language, nutritional label formatting for your target market, and full compliance documentation. Lead time is approximately 45 days from artwork approval."
+  },
+  "markets": {
+    "label": "Global Reach",
+    "headline": "Supplying Rice to the World",
+    "subheadline": "Our rice reaches kitchens, restaurants, and food factories across every major continent.",
+    "r1": "🌏 Southeast Asia — Vietnam, Indonesia, Philippines, Malaysia, Singapore, Myanmar",
+    "r2": "🕌 Middle East — UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman, Jordan",
+    "r3": "🌍 Africa — Nigeria, Ghana, Ivory Coast, Cameroon, Kenya, South Africa, Egypt",
+    "r4": "🌍 Europe — UK, Germany, France, Netherlands, Poland, Sweden, Belgium",
+    "r5": "🌎 Americas — USA, Canada, Brazil, Mexico, Panama",
+    "r6": "🌏 South Asia — India (specialty), Sri Lanka, Bangladesh",
+    "mapCaption": "Indicative map of regions where TAT Global supplies bulk rice. Gold markers highlight active export corridors.",
+    "mapLoading": "Loading export regions map"
+  },
+  "marketsPage": {
+    "docsTitle": "Documentation support",
+    "docsBody": "Every shipment is supported by complete documentation for import compliance, including Certificate of Analysis, Phytosanitary Certificate, and Certificate of Origin."
+  },
+  "testimonials": {
+    "label": "What Our Buyers Say",
+    "headline": "Trusted by Importers Worldwide",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "dotsLabel": "Testimonial slides",
+    "goToSlide": "Go to testimonial {n}",
+    "quote1": "\"TAT Global has been our primary Thai rice supplier for three years. Their consistency in quality and documentation has made our import process seamless. Highly recommended for serious bulk buyers.\"",
+    "author1": "— Ahmed Al-Rashid, General Manager, Gulf Foods Trading LLC (UAE)",
+    "quote2": "\"We source jasmine rice for our supermarket chain's private label. TAT Global's private label program is professional, responsive, and the quality is consistently excellent. Our customers love the product.\"",
+    "author2": "— Sophie Chen, Procurement Director, FreshMart Supermarkets (Singapore)",
+    "quote3": "\"As a food manufacturer, we need rice that meets strict specifications every batch. TAT Global delivers that. Their lab reports are thorough and their export documentation is always complete.\"",
+    "author3": "— David Mensah, Supply Chain Manager, West Africa Food Industries (Ghana)"
+  },
+  "finalCta": {
+    "headline": "Looking for a Reliable Thai Rice Supplier?",
+    "subheadline": "Request a competitive quote today and get a response from our export team within 24 hours. No obligation — just a conversation about your requirements.",
+    "trust": "Trusted by importers in 40+ countries since our founding."
+  },
+  "footer": {
+    "company": "Company",
+    "productsColumn": "Products",
+    "newsletter": "Newsletter",
+    "tagline": "Premium Thai Rice — Manufactured and Exported from Thailand to the World.",
+    "aboutLink": "About Us",
+    "qualityLink": "Quality Assurance",
+    "marketsLink": "Export Markets",
+    "faqLink": "FAQ",
+    "newsletterTitle": "Get market updates and new product announcements.",
+    "newsletterPlaceholder": "Enter your business email",
+    "newsletterHoneyLabel": "Leave this field blank",
+    "newsletterGdpr": "I agree to receive occasional business updates from TAT Global and understand I may unsubscribe anytime. See our <privacyLink>Privacy Policy</privacyLink>.",
+    "newsletterSending": "Subscribing...",
+    "newsletterSuccess": "You are subscribed — thank you.",
+    "newsletterErrorInvalid": "Please check your email address and consent box.",
+    "newsletterErrorRateLimited": "Too many attempts — please wait and try again.",
+    "newsletterErrorServer": "Something went wrong. Please try again later.",
+    "subscribe": "Subscribe",
+    "catalogTitle": "Product catalog",
+    "catalogDescription": "Full specifications, packaging options, and MOQs for all export grades.",
+    "downloadCatalog": "Download PDF catalog",
+    "socialLine": "LinkedIn | Facebook | Instagram | YouTube",
+    "legalPrivacy": "<privacyLink>Privacy Policy</privacyLink> · Terms of Use",
+    "copyrightLine": "© {year} TAT GLOBAL CO., LTD. All rights reserved.",
+    "productJasmine": "Jasmine Rice",
+    "productWhite": "White Rice",
+    "productLongGrain": "Long Grain",
+    "productBroken": "Broken Rice",
+    "productGlutinous": "Glutinous",
+    "productParboiled": "Parboiled",
+    "viewAllProducts": "View all 22 products"
+  },
+  "quote": {
+    "modalTitle": "Request a Bulk Rice Quote",
+    "modalSubtitle": "Fill in your requirements and our export team will respond within 24 hours.",
+    "closeBackdropAria": "Close quote dialog",
+    "closeButtonAria": "Close",
+    "successTitle": "Thank You!",
+    "successBody": "Your inquiry has been received. A member of our export sales team will contact you within 24 business hours. In the meantime, feel free to browse our product catalog or download our PDF brochure.",
+    "sidebarTitle": "Request Quote",
+    "sidebarBody": "Get competitive bulk pricing, flexible MOQ, and fast turnaround.",
+    "exportSales": "Export Sales",
+    "gdprHint": "Please provide consent to continue.",
+    "sending": "Sending...",
+    "submit": "Send Inquiry →",
+    "selectProduct": "Select product",
+    "selectPackaging": "Select packaging",
+    "selectTimeline": "Select timeline",
+    "fullDescription": "Full Description",
+    "technicalSpecs": "Technical Specifications",
+    "packagingMmq": "Packaging options + MOQ",
+    "shippingStorage": "Shipping + Storage",
+    "shippingFallback": "Shipping details available on request.",
+    "storageFallback": "Storage guidance provided per order.",
+    "shippingLabel": "Shipping",
+    "storageLabel": "Storage",
+    "moqLine": "MOQ: {moq}",
+    "detailLabel": "Product Detail",
+    "relatedTitle": "Related products",
+    "attrColumn": "Attribute",
+    "valueColumn": "Value",
+    "productOptions": {
+      "jasmine": "Jasmine Rice (Thai Hom Mali)",
+      "white": "Thai White Rice",
+      "longGrain": "Long Grain Rice",
+      "broken": "Broken Rice (A1 Super)",
+      "glutinous": "Glutinous Rice (Sticky Rice)",
+      "parboiled": "Parboiled Rice",
+      "premium": "Premium Export Rice (Private Label)",
+      "multiple": "Multiple Products"
+    },
+    "packagingOptions": {
+      "p25": "25kg bags",
+      "p50": "50kg bags",
+      "pJumbo": "1MT Jumbo",
+      "pPrivate": "Private Label",
+      "pOther": "Other"
+    },
+    "timelineOptions": {
+      "t30": "Within 30 days",
+      "t13": "1–3 months",
+      "t36": "3–6 months",
+      "tExplore": "Just exploring"
+    },
+    "fields": {
+      "fullName": "Full Name *",
+      "companyName": "Company Name *",
+      "email": "Email Address *",
+      "phone": "Phone Number *",
+      "whatsapp": "WhatsApp Number *",
+      "country": "Country *",
+      "product": "Product Interested In *",
+      "quantity": "Quantity Required *",
+      "packaging": "Packaging Preference *",
+      "destination": "Delivery Destination *",
+      "message": "Message / Inquiry Details *",
+      "file": "Attach File (optional — PDF, DOC, max 5MB)",
+      "contactMethod": "Preferred Contact Method",
+      "timeline": "Expected Purchase Timeline",
+      "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink> and consent to being contacted regarding this inquiry. *"
+    },
+    "contactMethods": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "phone": "Phone"
+    },
+    "placeholders": {
+      "quantityExample": "e.g., 20 MT per month",
+      "destinationExample": "e.g., Dubai, UAE"
+    }
+  },
+  "productDetailImage": "Product Image",
+  "faqPage": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "q1": "What is the minimum order quantity?",
+    "a1": "Our standard MOQ is 20 MT (one 20ft container). For specialty varieties or private label, we can accommodate lower MOQs from 5–10 MT. Contact us to discuss your specific needs.",
+    "q2": "Do you offer private label packaging?",
+    "a2": "Yes. We offer a complete private label program including custom bag printing in any language, nutritional label formatting for your target market, and full compliance documentation. Lead time is approximately 45 days from artwork approval.",
+    "q3": "What certifications does your rice carry?",
+    "a3": "Our facilities are certified GMP, HACCP, and ISO 22000. Each shipment is supported by a Certificate of Analysis, Phytosanitary Certificate, and Certificate of Origin. Halal certification is available upon request.",
+    "q4": "What are your shipping terms?",
+    "a4": "We typically ship FOB from Laem Chabang or Bangkok Port. CIF terms are available upon request. We work with trusted freight forwarders globally.",
+    "q5": "How quickly can you respond to a quote request?",
+    "a5": "We aim to respond to all inquiries within 24 business hours. For urgent requirements, please indicate this in your message or contact us directly on WhatsApp.",
+    "q6": "Can you provide samples?",
+    "a6": "Yes, we can arrange product samples (typically 1–2 kg per variety) for qualified buyers. Sample shipping costs may apply depending on destination. Please contact our sales team.",
+    "q7": "What markets do you currently supply?",
+    "a7": "We currently supply buyers in 40+ countries across Southeast Asia, the Middle East, Africa, Europe, and the Americas. We are experienced with the import requirements and documentation of most major rice-importing countries.",
+    "q8": "How do I get started?",
+    "a8": "Simply click \"Request a Quote\" anywhere on this website, fill in your requirements, and our export team will be in touch within 24 hours. No commitment required."
+  },
+  "contactPage": {
+    "label": "Contact",
+    "title": "Contact Sales",
+    "intro": "We aim to respond to all inquiries within 24 business hours.",
+    "formTitle": "Send a message",
+    "directTitle": "Direct contact",
+    "emailLabel": "Email: sales@tatglcoltd.com",
+    "whatsappLabel": "WhatsApp",
+    "mapTitle": "Office location",
+    "mapIframeTitle": "Map showing TAT Global office on Banthat Thong Road, Bangkok",
+    "mapDirections": "Open in Google Maps",
+    "namePlaceholder": "Full Name",
+    "companyPlaceholder": "Company Name",
+    "emailPlaceholder": "Business Email",
+    "messagePlaceholder": "Message",
+    "fields": {
+      "fullName": "Full Name",
+      "companyName": "Company Name",
+      "email": "Business Email",
+      "message": "Message"
+    },
+    "gdpr": "I agree to the <privacyLink>Privacy Policy</privacyLink> and consent to being contacted regarding this inquiry. *",
+    "gdprHint": "Please agree to the privacy policy to continue.",
+    "sending": "Sending…",
+    "submitError": "Unable to send your message. Please try again.",
+    "successTitle": "Message received",
+    "successBody": "Thank you. A member of our export sales team will contact you within 24 business hours."
+  },
+  "privacyPage": {
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: May 2026",
+    "intro": "TAT GLOBAL CO., LTD (\"TAT Global\", \"we\", \"us\") operates tatglcoltd.com as a business-to-business rice export website. This policy explains how we collect, use, and protect personal data when you request quotes, contact our sales team, or subscribe to updates.",
+    "s1Title": "1. Data controller",
+    "s1Body": "TAT GLOBAL CO., LTD\nThailand\nEmail: sales@tatglcoltd.com\nWebsite: tatglcoltd.com\n\nWe process personal data in connection with wholesale rice inquiries and business communications only.",
+    "s2Title": "2. Information we collect",
+    "s2Body": "Depending on how you interact with us, we may collect:\n\n• Identity and contact details: name, company name, business email, phone or WhatsApp number, country\n• Inquiry details: product interest, quantities, packaging preferences, destination port, messages, and optional file attachments\n• Technical data: IP address, browser type, and basic server logs when you submit a form\n• Newsletter: business email address and consent records\n• Cookies: essential cookies for site functionality and cookie-consent preference (see Section 9)",
+    "s3Title": "3. How we use your information",
+    "s3Body": "We use your data to:\n\n• Respond to quote requests and contact messages\n• Prepare quotations, samples, and export documentation discussions\n• Send business updates if you subscribed to our newsletter (you may unsubscribe at any time)\n• Prevent spam and abuse (honeypot fields, rate limiting)\n• Improve website security and reliability\n\nWe do not sell your personal data.",
+    "s4Title": "4. Legal basis (where applicable)",
+    "s4Body": "If you are located in the European Economic Area, United Kingdom, or similar jurisdictions, we rely on:\n\n• Consent — when you tick the privacy checkbox or subscribe to marketing emails\n• Legitimate interests — to respond to B2B inquiries, operate our website, and protect against fraud\n• Contractual necessity — when processing is required to evaluate or fulfil a commercial relationship you request",
+    "s5Title": "5. Retention",
+    "s5Body": "We retain inquiry and quote records for as long as needed to manage the commercial relationship, comply with export and accounting obligations, and resolve disputes — typically up to seven years for business correspondence unless a shorter period is required by law. Newsletter data is kept until you unsubscribe or ask us to delete it.",
+    "s6Title": "6. Sharing and service providers",
+    "s6Body": "We may share data with trusted processors who help us operate the website and communications, such as:\n\n• Email delivery providers (e.g. Resend) to send inquiry notifications\n• Hosting and infrastructure providers for the website\n\nThese providers process data only on our instructions and under appropriate safeguards. We may also disclose information if required by law or to protect our legal rights.",
+    "s7Title": "7. International transfers",
+    "s7Body": "TAT Global is based in Thailand. If you submit data from another country, your information may be transferred to and processed in Thailand or in countries where our service providers operate. We take reasonable steps to ensure appropriate protection consistent with applicable law.",
+    "s8Title": "8. Your rights",
+    "s8Body": "Depending on your location, you may have the right to access, correct, delete, restrict, or object to certain processing of your personal data, and to withdraw consent where processing is consent-based. To exercise these rights, email sales@tatglcoltd.com. You may also lodge a complaint with your local data protection authority.",
+    "s9Title": "9. Cookies",
+    "s9Body": "We use essential cookies and local storage to remember your cookie-consent choice. We do not use third-party advertising cookies on this site. You can control cookies through your browser settings; disabling essential cookies may affect basic site behaviour.",
+    "s10Title": "10. Changes and contact",
+    "s10Body": "We may update this policy from time to time. The \"Last updated\" date at the top will change when we do. Continued use of the website after changes constitutes acceptance of the updated policy where permitted by law.\n\nQuestions: sales@tatglcoltd.com"
+  },
+  "common": {
+    "brand": "TAT GLOBAL CO., LTD",
+    "gallerySlot": "Gallery Image",
+    "inStock": "In Stock",
+    "certGmp": "GMP (Good Manufacturing Practice)",
+    "certHaccp": "HACCP",
+    "certIso": "ISO 22000 Food Safety Management",
+    "certFda": "Thai FDA Registered",
+    "certHalal": "Halal Certified (upon request)",
+    "certPhyto": "Phytosanitary Certificate (per shipment)",
+    "certCoo": "Certificate of Origin (Form D / Form AI)",
+    "certGmo": "Non-GMO (available upon request)"
+  }
+}
