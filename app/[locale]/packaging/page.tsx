@@ -3,8 +3,10 @@ import {getTranslations} from 'next-intl/server';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import AnimatedCard from '@/components/ui/AnimatedCard';
+import PageImageBanner from '@/components/ui/PageImageBanner';
 import PageHero from '@/components/ui/PageHero';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import {imageAlts, siteImages} from '@/lib/site-images';
 import {pageMetadata} from '@/lib/seo/page-metadata';
 import {unwrapRouteParams} from '@/lib/unwrap-route-params';
 
@@ -36,6 +38,14 @@ export default async function PackagingPage() {
       <Header />
       <div className="min-h-screen bg-cream">
         <PageHero label={tPack('pageTitle')} title={tPack('pageHeadline')} />
+        <PageImageBanner
+          src={siteImages.packagingBanner}
+          alt={imageAlts.packagingBanner}
+          title={tPack('pageHeadline')}
+          intro={tPack('privateProgramBody')}
+          width={1536}
+          height={1024}
+        />
 
         <section className="py-12">
           <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-3 lg:px-8">

@@ -8,8 +8,12 @@ export type NavLabelKey =
   | 'about'
   | 'products'
   | 'quality'
+  | 'qualityControl'
   | 'packaging'
   | 'markets'
+  | 'orderingProcedure'
+  | 'sustainability'
+  | 'testimonials'
   | 'faq'
   | 'contact'
   | 'privacy';
@@ -30,6 +34,10 @@ export const headerNav: SiteNavItem[] = [
 
 /** Footer company column — remaining marketing pages. */
 export const footerNav: SiteNavItem[] = [
+  {href: '/quality-control', labelKey: 'qualityControl'},
+  {href: '/ordering-procedure', labelKey: 'orderingProcedure'},
+  {href: '/sustainability', labelKey: 'sustainability'},
+  {href: '/testimonials', labelKey: 'testimonials'},
   {href: '/packaging', labelKey: 'packaging'},
   {href: '/markets', labelKey: 'markets'},
   {href: '/faq', labelKey: 'faq'},

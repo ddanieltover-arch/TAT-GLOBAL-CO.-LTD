@@ -4,6 +4,7 @@ import {catalogKeyFromSlug} from '@/lib/product-messages';
 import {products} from '@/lib/products';
 import {localizedAlternates} from '@/lib/seo/hreflang';
 import {SITE_NAME} from '@/lib/seo/site';
+import {brandLogo} from '@/lib/site-assets';
 import {getSiteUrl} from '@/lib/site-url';
 
 export type SeoPageKey =
@@ -11,8 +12,12 @@ export type SeoPageKey =
   | 'about'
   | 'products'
   | 'quality'
+  | 'qualityControl'
   | 'packaging'
   | 'markets'
+  | 'orderingProcedure'
+  | 'sustainability'
+  | 'testimonials'
   | 'faq'
   | 'contact'
   | 'privacy';
@@ -35,6 +40,7 @@ function ogTwitterBlock(
   const normalized = normalizeSeoPath(path);
   const ogLocale = locale === 'th' ? 'th_TH' : 'en_US';
   const url = `${base}/${locale}${normalized}`;
+  const imageUrl = `${base}${brandLogo.png}`;
 
   return {
     openGraph: {
@@ -44,11 +50,18 @@ function ogTwitterBlock(
       locale: ogLocale,
       type: 'website',
       siteName: SITE_NAME,
+      images: [
+        {
+          url: imageUrl,
+          alt: SITE_NAME,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [imageUrl],
     },
   };
 }

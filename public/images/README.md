@@ -13,6 +13,12 @@ public/images/
 ├── about-banner.jpg       ← About page hero banner
 ├── quality-banner.jpg     ← Quality page hero banner
 ├── contact-banner.jpg     ← Contact page hero banner
+├── packaging-banner.jpg   ← Packaging & logistics page banner
+├── markets-banner.jpg     ← Global markets page banner
+├── faq-banner.jpg         ← FAQ / wholesale inquiries page banner
+├── privacy-banner.jpg     ← Privacy page corporate facility banner
+├── why-us-quality.jpg     ← Homepage Why Us quality standards banner
+├── home-certifications.jpg ← Homepage certifications / food safety banner
 ├── hero.jpg               ← Legacy landscape hero (unused on homepage)
 ├── hero-desktop.jpg       ← Homepage hero (desktop ≥768px, interactive hotspots)
 ├── hero-mobile.jpg        ← Homepage hero (mobile ≤767px, interactive hotspots)

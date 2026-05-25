@@ -1,5 +1,5 @@
 /**
- * Shared Supabase Storage upload for product WebPs.
+ * Shared Supabase Storage upload for product images.
  */
 import {createClient} from '@supabase/supabase-js';
 import {existsSync, readFileSync, readdirSync} from 'node:fs';
@@ -50,7 +50,7 @@ export function isSupabaseUploadConfigured() {
 }
 
 /**
- * Upload every `.webp` in public/images/products/ to Supabase Storage (upsert).
+ * Upload every supported product image in public/images/products/ to Supabase Storage (upsert).
  * @returns {Promise<{ok: number, total: number, skipped: boolean}>}
  */
 export async function uploadProductImagesToSupabase() {
@@ -71,9 +71,9 @@ export async function uploadProductImagesToSupabase() {
     throw new Error(`No product images folder: ${productsDir}`);
   }
 
-  const files = readdirSync(productsDir).filter((name) => name.endsWith('.webp'));
+  const files = readdirSync(productsDir).filter((name) => /\.(webp|png)$/i.test(name));
   if (files.length === 0) {
-    throw new Error('No .webp files in public/images/products/');
+    throw new Error('No supported image files in public/images/products/');
   }
 
   const supabase = createClient(url, serviceKey, {
@@ -86,8 +86,9 @@ export async function uploadProductImagesToSupabase() {
   let ok = 0;
   for (const name of files) {
     const body = readFileSync(join(productsDir, name));
+    const contentType = name.toLowerCase().endsWith('.png') ? 'image/png' : 'image/webp';
     const {error} = await supabase.storage.from(bucket).upload(name, body, {
-      contentType: 'image/webp',
+      contentType,
       upsert: true,
     });
 

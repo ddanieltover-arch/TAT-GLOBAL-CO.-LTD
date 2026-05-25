@@ -1,5 +1,6 @@
 'use client';
 
+import BackToTopButton from './BackToTopButton';
 import CookieConsent from './CookieConsent';
 import StickyQuoteCTA from './StickyQuoteCTA';
 import WhatsAppButton from './WhatsAppButton';
@@ -11,6 +12,7 @@ import WhatsAppButton from './WhatsAppButton';
 export default function FloatingUi() {
   return (
     <>
+      <BackToTopButton />
       <WhatsAppButton />
       <div className="pointer-events-none fixed bottom-0 left-0 right-0 z-[56] flex flex-col overflow-hidden">
         <div className="pointer-events-auto">

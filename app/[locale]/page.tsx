@@ -26,7 +26,9 @@ export async function generateMetadata({
 export default function LocaleHomePage() {
   return (
     <>
-      <Header />
+      <div className="hidden md:contents">
+        <Header />
+      </div>
       <div className="min-h-screen">
         <HeroSection />
         <HomeBelowFold />

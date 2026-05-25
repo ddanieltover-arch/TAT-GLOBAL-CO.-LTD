@@ -1,9 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import {useTranslations} from 'next-intl';
 import {Leaf, ShieldCheck, Landmark, Package, FileText, Clock3} from 'lucide-react';
 import AnimatedCard from '@/components/ui/AnimatedCard';
 import SectionHeader from '@/components/ui/SectionHeader';
+import {imageAlts, siteImages} from '@/lib/site-images';
 
 const items = [
   {Icon: Leaf, titleKey: 'r1Title' as const, descKey: 'r1Desc' as const},
@@ -21,6 +23,17 @@ export default function WhyChooseUs() {
     <section className="bg-gray-100 py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeader label={t('label')} headline={t('headline')} />
+
+        <div className="mt-10 overflow-hidden rounded-2xl border border-white bg-white shadow-card">
+          <Image
+            src={siteImages.whyUsQuality}
+            alt={imageAlts.whyUsQuality}
+            width={1774}
+            height={887}
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="h-auto w-full"
+          />
+        </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {items.map(({Icon, titleKey, descKey}, idx) => (

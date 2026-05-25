@@ -32,8 +32,7 @@ export default function HeroHotspotLayer({hotspots, label}: HeroHotspotLayerProp
         };
 
         const className = cn(
-          'absolute z-10 cursor-pointer bg-transparent transition',
-          'hover:bg-white/10 active:bg-white/15',
+          'absolute z-10 block cursor-pointer bg-transparent transition',
           hotspotFocus
         );
 

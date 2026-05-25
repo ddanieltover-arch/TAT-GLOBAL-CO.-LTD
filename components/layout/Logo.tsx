@@ -16,7 +16,7 @@ const logoConfig: Record<
     src: brandLogo.header,
     width: 180,
     height: 48,
-    imageClass: 'h-10 w-auto sm:h-11',
+    imageClass: 'h-8 w-auto sm:h-9 lg:h-11',
     panelClass: 'rounded-md bg-white px-2 py-1 shadow-sm',
   },
   footer: {

@@ -45,8 +45,8 @@ export default function Header() {
           isScrolled && 'shadow-lg'
         )}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Logo variant="header" priority />
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8 lg:py-4">
+          <Logo variant="header" priority className="min-h-0 py-0 lg:min-h-11 lg:py-2" />
 
           <nav className="hidden items-center gap-1.5 xl:flex" aria-label={ta('mainNavLabel')}>
             {navItems.map((item) => {
@@ -83,7 +83,7 @@ export default function Header() {
               type="button"
               onClick={() => setIsMobileNavOpen(true)}
               aria-label={ta('openMobileNav')}
-              className="touch-target rounded-lg border border-white/20 bg-white/10 p-2 text-white transition hover:border-gold/40 hover:bg-white/15 xl:hidden"
+              className="touch-target h-10 w-10 rounded-lg border border-white/20 bg-white/10 p-2 text-white transition hover:border-gold/40 hover:bg-white/15 xl:hidden"
             >
               <Menu className="h-5 w-5" />
             </button>

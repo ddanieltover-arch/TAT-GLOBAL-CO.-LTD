@@ -12,6 +12,8 @@ import MotionProvider from '@/components/providers/MotionProvider';
 import {QuoteModalProvider} from '@/components/quote/QuoteModalContext';
 import {routing} from '@/i18n/routing';
 import {defaultLocale, locales} from '@/lib/translations';
+import {SITE_NAME} from '@/lib/seo/site';
+import {brandLogo} from '@/lib/site-assets';
 import {getSiteUrl} from '@/lib/site-url';
 import {unwrapRouteParams} from '@/lib/unwrap-route-params';
 
@@ -42,14 +44,33 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, raw) ? raw : defaultLocale;
 
   const t = await getTranslations({locale, namespace: 'meta'});
+  const base = getSiteUrl();
+  const imageUrl = `${base}${brandLogo.png}`;
 
   return {
-    metadataBase: new URL(getSiteUrl()),
+    metadataBase: new URL(base),
     title: {
       default: t('title'),
       template: `%s${t('titleSuffix')}`,
     },
     description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      siteName: SITE_NAME,
+      images: [
+        {
+          url: imageUrl,
+          alt: SITE_NAME,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      images: [imageUrl],
+    },
   };
 }
 

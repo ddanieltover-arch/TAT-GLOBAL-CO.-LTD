@@ -6,8 +6,10 @@ import {ChevronDown} from 'lucide-react';
 import {useTranslations} from 'next-intl';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import PageImageBanner from '@/components/ui/PageImageBanner';
 import PageHero from '@/components/ui/PageHero';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import {imageAlts, siteImages} from '@/lib/site-images';
 
 const faqIndices = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 
@@ -20,6 +22,14 @@ export default function FaqPageClient() {
       <Header />
       <div className="min-h-screen bg-cream">
         <PageHero label={t('label')} title={t('title')} />
+        <PageImageBanner
+          src={siteImages.faqBanner}
+          alt={imageAlts.faqBanner}
+          title={t('title')}
+          intro={t('a1')}
+          width={1536}
+          height={1024}
+        />
 
         <section className="py-12">
           <div className="mx-auto max-w-4xl space-y-3 px-6 lg:px-8">
