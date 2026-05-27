@@ -4,7 +4,16 @@ import {getEmailLogoUrl} from '@/lib/email/brand';
 
 const CANDIDATE_FILES = ['logo-email.png', 'logo.png', 'logo-header.webp'] as const;
 
-let cachedDataUri: string | null = null;
+/** Content-ID referenced in HTML as `cid:tat-email-logo` (Resend + nodemailer). */
+export const EMAIL_LOGO_CID = 'tat-email-logo';
+
+type LoadedLogo = {
+  buffer: Buffer;
+  filename: string;
+  mime: string;
+};
+
+let cachedLogo: LoadedLogo | null | undefined;
 
 function mimeFor(filename: string): string {
   if (filename.endsWith('.webp')) return 'image/webp';
@@ -12,13 +21,9 @@ function mimeFor(filename: string): string {
   return 'image/png';
 }
 
-/**
- * Inline logo for HTML emails — avoids broken remote images when the site
- * is not deployed or email clients block external images.
- */
-export function getEmailLogoSrc(): string {
-  if (cachedDataUri) {
-    return cachedDataUri;
+function loadEmailLogoFile(): LoadedLogo | null {
+  if (cachedLogo !== undefined) {
+    return cachedLogo;
   }
 
   for (const file of CANDIDATE_FILES) {
@@ -27,14 +32,48 @@ export function getEmailLogoSrc(): string {
       continue;
     }
     try {
-      const buffer = readFileSync(path);
-      const mime = mimeFor(file);
-      cachedDataUri = `data:${mime};base64,${buffer.toString('base64')}`;
-      return cachedDataUri;
+      cachedLogo = {
+        buffer: readFileSync(path),
+        filename: file,
+        mime: mimeFor(file),
+      };
+      return cachedLogo;
     } catch {
       // try next file
     }
   }
 
+  cachedLogo = null;
+  return null;
+}
+
+/**
+ * Logo `src` for HTML emails. Uses CID embedding when the file is available
+ * (Gmail and most clients block data: URIs).
+ */
+export function getEmailLogoSrc(): string {
+  if (loadEmailLogoFile()) {
+    return `cid:${EMAIL_LOGO_CID}`;
+  }
   return getEmailLogoUrl();
+}
+
+/** Inline logo attachment for transactional email providers. */
+export function getEmailLogoInlineAttachment(): {
+  filename: string;
+  content: Buffer;
+  contentType: string;
+  contentId: string;
+} | null {
+  const logo = loadEmailLogoFile();
+  if (!logo) {
+    return null;
+  }
+
+  return {
+    filename: logo.filename,
+    content: logo.buffer,
+    contentType: logo.mime,
+    contentId: EMAIL_LOGO_CID,
+  };
 }
