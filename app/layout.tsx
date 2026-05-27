@@ -1,8 +1,27 @@
 import type {Metadata} from 'next';
+import {Playfair_Display, DM_Sans, Sarabun} from 'next/font/google';
 import './globals.css';
 import {SITE_NAME} from '@/lib/seo/site';
 import {brandLogo} from '@/lib/site-assets';
 import {getSiteUrl} from '@/lib/site-url';
+
+const displayFont = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800', '900'],
+});
+
+const bodyFont = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-body',
+  weight: ['400', '500', '600', '700'],
+});
+
+const thaiFont = Sarabun({
+  subsets: ['thai', 'latin'],
+  variable: '--font-thai',
+  weight: ['300', '400', '500', '600', '700', '800'],
+});
 
 const siteUrl = getSiteUrl();
 const ogImageUrl = `${siteUrl}${brandLogo.png}`;
@@ -31,5 +50,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
-  return children;
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${displayFont.variable} ${bodyFont.variable} ${thaiFont.variable} font-sans antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

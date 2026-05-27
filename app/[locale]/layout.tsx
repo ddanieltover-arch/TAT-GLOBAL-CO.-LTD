@@ -1,5 +1,4 @@
 import type {Metadata} from 'next';
-import {Playfair_Display, DM_Sans, Sarabun} from 'next/font/google';
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
@@ -16,24 +15,7 @@ import {SITE_NAME} from '@/lib/seo/site';
 import {brandLogo} from '@/lib/site-assets';
 import {getSiteUrl} from '@/lib/site-url';
 import {unwrapRouteParams} from '@/lib/unwrap-route-params';
-
-const displayFont = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-display',
-  weight: ['400', '500', '600', '700', '800', '900'],
-});
-
-const bodyFont = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['400', '500', '600', '700'],
-});
-
-const thaiFont = Sarabun({
-  subsets: ['thai', 'latin'],
-  variable: '--font-thai',
-  weight: ['300', '400', '500', '600', '700', '800'],
-});
+import LocaleHtmlLang from '@/components/LocaleHtmlLang';
 
 export async function generateMetadata({
   params,
@@ -98,24 +80,21 @@ export default async function LocaleLayout({
     locale === 'th' ? 'font-thai leading-relaxed' : 'font-sans';
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${displayFont.variable} ${bodyFont.variable} ${thaiFont.variable} ${fontStack}`}
-      >
-        <OrganizationJsonLd locale={locale} />
-        <GrainTexture />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <MotionProvider>
-            <QuoteModalProvider>
-              <SkipToContent />
-              <main id="main-content" tabIndex={-1} className="outline-none">
-                <PageTransition>{children}</PageTransition>
-              </main>
-              <FloatingUi />
-            </QuoteModalProvider>
-          </MotionProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <div className={fontStack}>
+      <OrganizationJsonLd locale={locale} />
+      <GrainTexture />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <LocaleHtmlLang />
+        <MotionProvider>
+          <QuoteModalProvider>
+            <SkipToContent />
+            <main id="main-content" tabIndex={-1} className="outline-none">
+              <PageTransition>{children}</PageTransition>
+            </main>
+            <FloatingUi />
+          </QuoteModalProvider>
+        </MotionProvider>
+      </NextIntlClientProvider>
+    </div>
   );
 }

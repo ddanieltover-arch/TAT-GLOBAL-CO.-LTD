@@ -95,6 +95,20 @@ export function getEnvChecklist(): EnvCheckItem[] {
       ok: isSupabaseStorageConfigured(),
       hint: 'Set URL + anon key to serve product WebPs from a public bucket. See docs/SUPABASE-STORAGE.md.',
     },
+    {
+      key: 'DATABASE_URL',
+      label: 'Postgres connection (admin lead inbox)',
+      requirement: 'recommended',
+      ok: isSet('DATABASE_URL'),
+      hint: 'Supabase → Database → Session pooler URI in .env.local. Then run prisma/supabase-init.sql or npm run db:push.',
+    },
+    {
+      key: 'SUPABASE_SERVICE_ROLE_KEY',
+      label: 'Supabase service role (admin API fallback)',
+      requirement: 'recommended',
+      ok: isSet('SUPABASE_SERVICE_ROLE_KEY'),
+      hint: 'Required for admin reads if Prisma cannot reach Postgres from the server.',
+    },
   ];
 
   return items;

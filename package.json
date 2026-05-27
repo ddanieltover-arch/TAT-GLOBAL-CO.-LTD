@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3030",
-    "build": "next build",
+    "build": "prisma generate && next build",
+    "db:generate": "node scripts/prisma-env.mjs generate",
+    "db:push": "node scripts/prisma-env.mjs db push",
+    "db:studio": "node scripts/prisma-env.mjs studio",
     "start": "next start -p 3030",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -20,6 +23,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
+    "@prisma/client": "^5.18.0",
+    "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
@@ -32,6 +37,7 @@
     "react-hook-form": "^7.75.0",
     "react-simple-maps": "^3.0.0",
     "resend": "^6.12.3",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.5.0",
     "zod": "^4.4.3"
   },
@@ -45,6 +51,7 @@
     "eslint-config-next": "^14.2.35",
     "pdf-lib": "^1.17.1",
     "postcss": "^8.5.14",
+    "prisma": "^5.18.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.19.4",

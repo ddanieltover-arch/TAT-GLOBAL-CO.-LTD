@@ -8,6 +8,7 @@ import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {quoteServerSchema} from '@/lib/schema';
 import {buildQuoteCrmPayload, sendCrmWebhook} from '@/lib/crm-webhook';
 import {sendQuoteFormEmails} from '@/lib/email';
+import {storeQuoteSubmission, SubmissionStoreError} from '@/lib/submission-store';
 
 function toBoolean(value: FormDataEntryValue | null) {
   return value === 'true' || value === 'on';
@@ -85,6 +86,21 @@ export async function POST(request: Request) {
     }
 
     const attachmentName = attachments?.[0]?.filename;
+
+    try {
+      await storeQuoteSubmission(data, {
+        ipAddress: ip,
+        userAgent: request.headers.get('user-agent') ?? undefined,
+      });
+    } catch (storeError) {
+      console.error('[quote] submission store failed:', storeError);
+      if (storeError instanceof SubmissionStoreError) {
+        return NextResponse.json(
+          {message: 'Unable to save your inquiry right now. Please try again or email us directly.'},
+          {status: 503},
+        );
+      }
+    }
 
     await sendQuoteFormEmails(data, {attachmentName}, attachments);
 

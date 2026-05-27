@@ -8,6 +8,7 @@ import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {contactRequestSchema} from '@/lib/schema';
 import {buildContactCrmPayload, sendCrmWebhook} from '@/lib/crm-webhook';
 import {sendContactFormEmails} from '@/lib/email';
+import {storeContactSubmission, SubmissionStoreError} from '@/lib/submission-store';
 
 function contactAcceptedResponse() {
   return NextResponse.json({message: CONTACT_SUCCESS_MESSAGE}, {status: 200});
@@ -61,6 +62,21 @@ export async function POST(request: Request) {
     }
 
     const data = parsed.data;
+
+    try {
+      await storeContactSubmission(data, {
+        ipAddress: ip,
+        userAgent: request.headers.get('user-agent') ?? undefined,
+      });
+    } catch (storeError) {
+      console.error('[contact] submission store failed:', storeError);
+      if (storeError instanceof SubmissionStoreError) {
+        return NextResponse.json(
+          {message: 'Unable to save your message right now. Please try again or email us directly.'},
+          {status: 503},
+        );
+      }
+    }
 
     await sendContactFormEmails(data);
 

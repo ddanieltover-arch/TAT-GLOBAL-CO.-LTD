@@ -7,6 +7,7 @@ import {
 import {getClientIp, takeToken} from '@/lib/rate-limit';
 import {newsletterRequestSchema} from '@/lib/schema';
 import {sendNewsletterFormEmails} from '@/lib/email';
+import {storeNewsletterSubscriber, SubmissionStoreError} from '@/lib/submission-store';
 
 function honeypotSilentSuccess() {
   return NextResponse.json({ok: true as const, message: NEWSLETTER_SUCCESS_MESSAGE}, {status: 200});
@@ -54,6 +55,18 @@ export async function POST(request: Request) {
     }
 
     const data = parsed.data;
+
+    try {
+      await storeNewsletterSubscriber(data, {
+        ipAddress: ip,
+        userAgent: request.headers.get('user-agent') ?? undefined,
+      });
+    } catch (storeError) {
+      console.error('[newsletter] subscriber store failed:', storeError);
+      if (storeError instanceof SubmissionStoreError) {
+        return NextResponse.json({ok: false as const, code: 'SERVER_ERROR'}, {status: 503});
+      }
+    }
 
     await sendNewsletterFormEmails(data.email, ip, data.locale);
 
