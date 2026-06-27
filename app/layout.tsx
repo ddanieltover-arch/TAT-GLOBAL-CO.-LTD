@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {Playfair_Display, DM_Sans, Sarabun} from 'next/font/google';
+import GoogleAdsTag from '@/components/analytics/GoogleAdsTag';
 import './globals.css';
 import {SITE_NAME} from '@/lib/seo/site';
 import {brandLogo} from '@/lib/site-assets';
@@ -55,6 +56,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body
         className={`${displayFont.variable} ${bodyFont.variable} ${thaiFont.variable} font-sans antialiased`}
       >
+        <GoogleAdsTag />
         {children}
       </body>
     </html>
