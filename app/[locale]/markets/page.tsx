@@ -67,6 +67,17 @@ export default async function MarketsPage() {
               <article className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
                 <h2 className="font-display text-3xl text-gray-900">{tExtra('docsTitle')}</h2>
                 <p className="mt-3 text-gray-700">{tExtra('docsBody')}</p>
+                <p className="mt-3 text-gray-700">
+                  Buyers who need freight on these corridors can arrange{" "}
+                  <a
+                    href="https://nexships.com/services#ocean-freight"
+                    className="font-semibold text-gold hover:underline"
+                    rel="noopener noreferrer"
+                  >
+                    container shipping for Thai rice exports
+                  </a>
+                  .
+                </p>
               </article>
             </ScrollReveal>
           </div>
